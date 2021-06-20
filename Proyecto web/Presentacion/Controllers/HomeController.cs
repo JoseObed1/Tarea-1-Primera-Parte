@@ -23,6 +23,19 @@ namespace Presentacion.Controllers
             return View();
         }
 
+        public IActionResult sobrenosotros()
+        {
+            return View();
+        }
+
+        public IActionResult nuevoPost()
+        {
+            return View();
+        }
+
+
+
+
         public IActionResult Privacy()
         {
             return View();
