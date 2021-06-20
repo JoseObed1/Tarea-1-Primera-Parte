@@ -1,0 +1,15 @@
+C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\Datos\bin\Debug\Datos.dll.config
+C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\Datos\bin\Debug\Datos.dll
+C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\Datos\bin\Debug\Datos.pdb
+C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\Datos\bin\Debug\Entidad.dll
+C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\Datos\bin\Debug\EntityFramework.dll
+C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\Datos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\Datos\bin\Debug\Entidad.pdb
+C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\Datos\bin\Debug\Entidad.dll.config
+C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\Datos\bin\Debug\EntityFramework.xml
+C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\Datos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\Datos\obj\Debug\Datos.dll
+C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\Datos\obj\Debug\Datos.pdb
