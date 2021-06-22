@@ -9,15 +9,3 @@ C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\Entidad\obj\D
 C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\Entidad\obj\Debug\Entidad.csproj.CopyComplete
 C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\Entidad\obj\Debug\Entidad.dll
 C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\Entidad\obj\Debug\Entidad.pdb
-C:\Users\Jose\source\repos\JoseObed1\Tarea-1--parte-1-primera-parte\Proyecto web\Entidad\bin\Debug\Entidad.dll.config
-C:\Users\Jose\source\repos\JoseObed1\Tarea-1--parte-1-primera-parte\Proyecto web\Entidad\bin\Debug\Entidad.dll
-C:\Users\Jose\source\repos\JoseObed1\Tarea-1--parte-1-primera-parte\Proyecto web\Entidad\bin\Debug\Entidad.pdb
-C:\Users\Jose\source\repos\JoseObed1\Tarea-1--parte-1-primera-parte\Proyecto web\Entidad\bin\Debug\EntityFramework.dll
-C:\Users\Jose\source\repos\JoseObed1\Tarea-1--parte-1-primera-parte\Proyecto web\Entidad\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Jose\source\repos\JoseObed1\Tarea-1--parte-1-primera-parte\Proyecto web\Entidad\bin\Debug\EntityFramework.xml
-C:\Users\Jose\source\repos\JoseObed1\Tarea-1--parte-1-primera-parte\Proyecto web\Entidad\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Jose\source\repos\JoseObed1\Tarea-1--parte-1-primera-parte\Proyecto web\Entidad\obj\Debug\Entidad.csproj.AssemblyReference.cache
-C:\Users\Jose\source\repos\JoseObed1\Tarea-1--parte-1-primera-parte\Proyecto web\Entidad\obj\Debug\Entidad.csproj.CoreCompileInputs.cache
-C:\Users\Jose\source\repos\JoseObed1\Tarea-1--parte-1-primera-parte\Proyecto web\Entidad\obj\Debug\Entidad.csproj.CopyComplete
-C:\Users\Jose\source\repos\JoseObed1\Tarea-1--parte-1-primera-parte\Proyecto web\Entidad\obj\Debug\Entidad.dll
-C:\Users\Jose\source\repos\JoseObed1\Tarea-1--parte-1-primera-parte\Proyecto web\Entidad\obj\Debug\Entidad.pdb

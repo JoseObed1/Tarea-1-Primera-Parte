@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="IIS Web Application Name" description="" value="joseobed1-001-site1" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto\ web\\Presentacion\\obj\\Release\\net5\.0\\PubTmp\\Out\\$" />
-  </parameter>
-</parameters>
