@@ -1,66 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {
-      "Datos/1.0.0": {
-        "type": "project",
-        "dependencies": {
-          "Entidad": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Datos.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Datos.dll": {}
-        }
-      },
-      "Entidad/1.0.0": {
-        "type": "project",
-        "compile": {
-          "bin/placeholder/Entidad.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Entidad.dll": {}
-        }
-      },
-      "Negocio/1.0.0": {
-        "type": "project",
-        "dependencies": {
-          "Datos": "1.0.0",
-          "Entidad": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Negocio.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Negocio.dll": {}
-        }
-      }
-    }
+    "net5.0": {}
   },
-  "libraries": {
-    "Datos/1.0.0": {
-      "type": "project",
-      "path": "../Datos/Datos.csproj",
-      "msbuildProject": "../Datos/Datos.csproj"
-    },
-    "Entidad/1.0.0": {
-      "type": "project",
-      "path": "../Entidad/Entidad.csproj",
-      "msbuildProject": "../Entidad/Entidad.csproj"
-    },
-    "Negocio/1.0.0": {
-      "type": "project",
-      "path": "../Negocio/Negocio.csproj",
-      "msbuildProject": "../Negocio/Negocio.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net5.0": [
-      "Datos >= 1.0.0",
-      "Entidad >= 1.0.0",
-      "Negocio >= 1.0.0"
-    ]
+    "net5.0": []
   },
   "packageFolders": {
     "C:\\Users\\Jose\\.nuget\\packages\\": {}
@@ -88,17 +33,7 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {
-            "C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto web\\Datos\\Datos.csproj": {
-              "projectPath": "C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto web\\Datos\\Datos.csproj"
-            },
-            "C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto web\\Entidad\\Entidad.csproj": {
-              "projectPath": "C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto web\\Entidad\\Entidad.csproj"
-            },
-            "C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto web\\Negocio\\Negocio.csproj": {
-              "projectPath": "C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto web\\Negocio\\Negocio.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

@@ -4,57 +4,6 @@
     "C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto web\\Presentacion\\Presentacion.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto web\\Datos\\Datos.csproj": {
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto web\\Datos\\Datos.csproj",
-        "projectName": "Datos",
-        "projectPath": "C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto web\\Datos\\Datos.csproj",
-        "frameworks": {
-          "net472": {
-            "projectReferences": {
-              "C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto web\\Entidad\\Entidad.csproj": {
-                "projectPath": "C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto web\\Entidad\\Entidad.csproj"
-              }
-            }
-          }
-        }
-      },
-      "frameworks": {
-        "net472": {}
-      }
-    },
-    "C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto web\\Entidad\\Entidad.csproj": {
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto web\\Entidad\\Entidad.csproj",
-        "projectName": "Entidad",
-        "projectPath": "C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto web\\Entidad\\Entidad.csproj"
-      },
-      "frameworks": {
-        "net472": {}
-      }
-    },
-    "C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto web\\Negocio\\Negocio.csproj": {
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto web\\Negocio\\Negocio.csproj",
-        "projectName": "Negocio",
-        "projectPath": "C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto web\\Negocio\\Negocio.csproj",
-        "frameworks": {
-          "net472": {
-            "projectReferences": {
-              "C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto web\\Datos\\Datos.csproj": {
-                "projectPath": "C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto web\\Datos\\Datos.csproj"
-              },
-              "C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto web\\Entidad\\Entidad.csproj": {
-                "projectPath": "C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto web\\Entidad\\Entidad.csproj"
-              }
-            }
-          }
-        }
-      },
-      "frameworks": {
-        "net472": {}
-      }
-    },
     "C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto web\\Presentacion\\Presentacion.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -78,17 +27,7 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {
-              "C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto web\\Datos\\Datos.csproj": {
-                "projectPath": "C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto web\\Datos\\Datos.csproj"
-              },
-              "C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto web\\Entidad\\Entidad.csproj": {
-                "projectPath": "C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto web\\Entidad\\Entidad.csproj"
-              },
-              "C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto web\\Negocio\\Negocio.csproj": {
-                "projectPath": "C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto web\\Negocio\\Negocio.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
