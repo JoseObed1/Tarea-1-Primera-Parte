@@ -50,3 +50,5 @@ C:\Users\utente\Desktop\Tarea-1-Primera-Parte\Proyecto web\Presentacion\obj\Debu
 C:\Users\utente\Desktop\Tarea-1-Primera-Parte\Proyecto web\Presentacion\obj\Debug\net5.0\Presentacion.genruntimeconfig.cache
 C:\Users\utente\Desktop\Tarea-1-Primera-Parte\Proyecto web\Presentacion\obj\Debug\net5.0\Razor\Views\Home\sobrenosotros.cshtml.g.cs
 C:\Users\utente\Desktop\Tarea-1-Primera-Parte\Proyecto web\Presentacion\obj\Debug\net5.0\Razor\Views\Home\nuevoPost.cshtml.g.cs
+C:\Users\utente\Desktop\Tarea-1-Primera-Parte\Proyecto web\Presentacion\bin\Debug\net5.0\EntityFramework.dll
+C:\Users\utente\Desktop\Tarea-1-Primera-Parte\Proyecto web\Presentacion\bin\Debug\net5.0\EntityFramework.xml
