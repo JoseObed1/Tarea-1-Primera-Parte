@@ -33,9 +33,6 @@
     ".NETCoreApp,Version=v5.0": {
       "Presentacion/1.0.0": {
         "dependencies": {
-          "Datos": "1.0.0",
-          "Entidad": "1.0.0",
-          "Negocio": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "5.0.0.0",
@@ -325,37 +322,6 @@
         },
         "compile": {
           "Presentacion.dll": {}
-        }
-      },
-      "Datos/1.0.0": {
-        "dependencies": {
-          "Entidad": "1.0.0"
-        },
-        "runtime": {
-          "Datos.dll": {}
-        },
-        "compile": {
-          "Datos.dll": {}
-        }
-      },
-      "Entidad/1.0.0": {
-        "runtime": {
-          "Entidad.dll": {}
-        },
-        "compile": {
-          "Entidad.dll": {}
-        }
-      },
-      "Negocio/1.0.0": {
-        "dependencies": {
-          "Datos": "1.0.0",
-          "Entidad": "1.0.0"
-        },
-        "runtime": {
-          "Negocio.dll": {}
-        },
-        "compile": {
-          "Negocio.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
@@ -2060,21 +2026,6 @@
   },
   "libraries": {
     "Presentacion/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Datos/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Entidad/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Negocio/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
