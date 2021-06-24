@@ -29,7 +29,10 @@ namespace Presentacion.Controllers
             return View();
         }
 
-
+        public IActionResult LoginRegister()
+        {
+            return View();
+        }
 
 
         public IActionResult Privacy()

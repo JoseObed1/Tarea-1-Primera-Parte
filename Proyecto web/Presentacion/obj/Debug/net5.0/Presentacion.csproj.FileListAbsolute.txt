@@ -11,14 +11,6 @@ C:\Users\utente\Desktop\Tarea-1-Primera-Parte\Proyecto web\Presentacion\bin\Debu
 C:\Users\utente\Desktop\Tarea-1-Primera-Parte\Proyecto web\Presentacion\bin\Debug\net5.0\Presentacion.pdb
 C:\Users\utente\Desktop\Tarea-1-Primera-Parte\Proyecto web\Presentacion\bin\Debug\net5.0\Presentacion.Views.dll
 C:\Users\utente\Desktop\Tarea-1-Primera-Parte\Proyecto web\Presentacion\bin\Debug\net5.0\Presentacion.Views.pdb
-C:\Users\utente\Desktop\Tarea-1-Primera-Parte\Proyecto web\Presentacion\bin\Debug\net5.0\Datos.dll
-C:\Users\utente\Desktop\Tarea-1-Primera-Parte\Proyecto web\Presentacion\bin\Debug\net5.0\Entidad.dll
-C:\Users\utente\Desktop\Tarea-1-Primera-Parte\Proyecto web\Presentacion\bin\Debug\net5.0\Negocio.dll
-C:\Users\utente\Desktop\Tarea-1-Primera-Parte\Proyecto web\Presentacion\bin\Debug\net5.0\Datos.pdb
-C:\Users\utente\Desktop\Tarea-1-Primera-Parte\Proyecto web\Presentacion\bin\Debug\net5.0\Datos.dll.config
-C:\Users\utente\Desktop\Tarea-1-Primera-Parte\Proyecto web\Presentacion\bin\Debug\net5.0\Entidad.pdb
-C:\Users\utente\Desktop\Tarea-1-Primera-Parte\Proyecto web\Presentacion\bin\Debug\net5.0\Entidad.dll.config
-C:\Users\utente\Desktop\Tarea-1-Primera-Parte\Proyecto web\Presentacion\bin\Debug\net5.0\Negocio.pdb
 C:\Users\utente\Desktop\Tarea-1-Primera-Parte\Proyecto web\Presentacion\obj\Debug\net5.0\Presentacion.csprojAssemblyReference.cache
 C:\Users\utente\Desktop\Tarea-1-Primera-Parte\Proyecto web\Presentacion\obj\Debug\net5.0\Presentacion.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\utente\Desktop\Tarea-1-Primera-Parte\Proyecto web\Presentacion\obj\Debug\net5.0\Presentacion.AssemblyInfoInputs.cache
@@ -94,3 +86,4 @@ C:\Users\Jose\source\repos\JoseObed1\Tarea-1--parte-1-primera-parte\Proyecto web
 C:\Users\Jose\source\repos\JoseObed1\Tarea-1--parte-1-primera-parte\Proyecto web\Presentacion\obj\Debug\net5.0\Presentacion.pdb
 C:\Users\Jose\source\repos\JoseObed1\Tarea-1--parte-1-primera-parte\Proyecto web\Presentacion\obj\Debug\net5.0\Presentacion.genruntimeconfig.cache
 C:\Users\Jose\source\repos\JoseObed1\Tarea-1--parte-1-primera-parte\Proyecto web\Presentacion\obj\Debug\net5.0\Presentacion.csproj.CopyComplete
+C:\Users\utente\Desktop\Tarea-1-Primera-Parte\Proyecto web\Presentacion\obj\Debug\net5.0\Razor\Views\Home\LoginRegister.cshtml.g.cs
