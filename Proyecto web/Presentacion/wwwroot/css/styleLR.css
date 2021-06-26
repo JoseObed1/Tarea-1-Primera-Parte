@@ -151,218 +151,180 @@ input {
 .user_options-container {
     position: relative;
     width: 80%;
+    height: 90%;
 }
 
 .user_options-text {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background-color: rgba(34, 34, 34, 0.85);
+    background-color: rgba(0,0, 255,0.85);
     border-radius: 3px;
 }
 
+
+
 /**
- * * Registered and Unregistered user box and text
+ * * Login Eudy
  * */
-.user_options-registered,
-.user_options-unregistered {
-    width: 50%;
-    padding: 75px 45px;
-    color: #fff;
-    font-weight: 300;
+
+* {
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
 }
 
-.user_registered-title,
-.user_unregistered-title {
-    margin-bottom: 15px;
-    font-size: 2.50rem;
-    line-height: 1em;
+body {
+    background-image: url(../Imagenes/12.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
-.user_unregistered-text,
-.user_registered-text {
-    font-size: 1.40rem;
-    line-height: 1.4em;
+main {
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
 }
 
-.user_registered-login,
-.user_unregistered-signup {
+.contenedor__todo {
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+    position: relative;
+}
+
+
+.caja__trasera {
+    width: 80%;
+    align-items: center;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0,128,255,0.5);
+}
+.caja__trasera div {
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms;
+}
+
+
+
+.caja__trasera div p,
+.caja__trasera div button {
     margin-top: 30px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    padding: 10px 30px;
-    color: #fff;
-    text-transform: uppercase;
-    line-height: 1em;
-    letter-spacing: 0.2rem;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-    .user_registered-login:hover,
-    .user_unregistered-signup:hover {
-        color: rgba(34, 34, 34, 0.85);
-        background-color: #ccc;
-    }
+.caja__trasera div h3 {
+    font-weight: 400;
+    font-size: 26px;
+}
 
-/**
- * * Login and signup forms
- * */
-.user_options-forms {
+.caja__trasera button {
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+}
+
+.caja__trasera button:hover {
+    background: white;
+    color: #46A2FD;
+}
+
+/* formularios */
+.contenedor__login-register {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+    transition: left 500ms cubic-bezier(0.175,0.885,0.320,1.275);
+}
+
+.contenedor__login-register form {
+    width: 100%;
+    padding: 80px 20px;
+    background: white;
     position: absolute;
-    top: 40%;
-    left: 30px;
-    width: calc(50% - 30px);
-    min-height: 570px;
-    background-color: #420404;
-    border-radius: 3px;
-    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.25);
-    overflow: hidden;
-    transform: translate3d(100%, -50%, 0);
-    transition: transform 0.4s ease-in-out;
+    border-radius: 20px;
 }
 
-    .user_options-forms .user_forms-login {
-        transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+.contenedor__login-register form h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #46A2FD;
+}
+.contenedor__login-register form input {
+   width: 100%;
+   margin-top: 20px;
+   padding: 10px;
+   border: none;
+   background: #f2f2f2;
+   font-size: 16px;
+   outline: none;
+}
+
+.contenedor__login-register form button {
+  padding: 10px 40px;
+  margin-top: 40px;
+  border: none;
+  font-size: 14px;
+  background: #46A2FD;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.formulario__login {
+    opacity: 1;
+    display: block;
+}
+
+.formulario__register {
+    display: none;
+}
+/* Responsive design */
+
+@media screen and (max-width: 850px) {
+    main {
+        margin-top: 50px;
     }
 
-    .user_options-forms .forms_title {
-        margin-bottom: 45px;
-        font-size: 2.5rem;
-        font-weight: 500;
-        line-height: 1em;
-        text-transform: uppercase;
-        color: #fff;
-        letter-spacing: 0.1rem;
+    .caja__trasera {
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
     }
 
-    .user_options-forms .forms_field:not(:last-of-type) {
-        margin-bottom: 20px;
-    }
-
-    .user_options-forms .forms_field-input {
-        width: 100%;
-        border-bottom: 1px solid #ccc;
-        padding: 6px 20px 6px 6px;
-        font-family: "Montserrat", sans-serif;
-        font-size: 1.2rem;
-        font-weight: 300;
-        color: gray;
-        letter-spacing: 0.1rem;
-        transition: border-color 0.2s ease-in-out;
-    }
-
-        .user_options-forms .forms_field-input:focus {
-            border-color: gray;
+     .caja__trasera div {
+            margin: 0px;
+            position: absolute;
         }
-
-    .user_options-forms .forms_buttons {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 35px;
+    /*Formulario */
+    .contenedor__login-register {
+        top: -10px;
+        left: -5px;
+        margin: auto;
     }
 
-    .user_options-forms .forms_buttons-forgot {
-        font-family: "Montserrat", sans-serif;
-        letter-spacing: 0.1rem;
-        color: #ccc;
-        text-decoration: underline;
-        transition: color 0.2s ease-in-out;
-    }
-
-        .user_options-forms .forms_buttons-forgot:hover {
-            color: #b3b3b3;
-        }
-
-    .user_options-forms .forms_buttons-action {
-        background-color: #fff;
-        border-radius: 3px;
-        padding: 10px 35px;
-        font-size: 1.5rem;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 300;
-        color: #420404;
-        text-transform: uppercase;
-        letter-spacing: 0.1rem;
-        transition: background-color 0.2s ease-in-out;
-    }
-
-        .user_options-forms .forms_buttons-action:hover {
-            background-color: #e14641;
-        }
-
-    .user_options-forms .user_forms-signup,
-    .user_options-forms .user_forms-login {
-        position: absolute;
-        top: 70px;
-        left: 40px;
-        width: calc(100% - 80px);
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out, transform 0.5s ease-in-out;
-    }
-
-    .user_options-forms .user_forms-signup {
-        transform: translate3d(120px, 0, 0);
-    }
-
-        .user_options-forms .user_forms-signup .forms_buttons {
-            justify-content: flex-end;
-        }
-
-    .user_options-forms .user_forms-login {
-        transform: translate3d(0, 0, 0);
-        opacity: 1;
-        visibility: visible;
-    }
-
-    /**
- * * Triggers
- * */
-    .user_options-forms.bounceLeft {
-        -webkit-animation: bounceLeft 1s forwards;
-        animation: bounceLeft 1s forwards;
-    }
-
-        .user_options-forms.bounceLeft .user_forms-signup {
-            -webkit-animation: showSignUp 1s forwards;
-            animation: showSignUp 1s forwards;
-        }
-
-        .user_options-forms.bounceLeft .user_forms-login {
-            opacity: 0;
-            visibility: hidden;
-            transform: translate3d(-120px, 0, 0);
-        }
-
-    .user_options-forms.bounceRight {
-        -webkit-animation: bounceRight 1s forwards;
-        animation: bounceRight 1s forwards;
-    }
-
-/**
- * * Responsive 990px
- * */
-@media screen and (max-width: 990px) {
-    .user_options-forms {
-        min-height: 350px;
-    }
-
-        .user_options-forms .forms_buttons {
-            flex-direction: column;
-        }
-
-        .user_options-forms .user_forms-login .forms_buttons-action {
-            margin-top: 30px;
-        }
-
-        .user_options-forms .user_forms-signup,
-        .user_options-forms .user_forms-login {
-            top: 20px;
-        }
-
-    .user_options-registered,
-    .user_options-unregistered {
-        padding: 50px 45px;
+    .contenedor__login-register form {
+            position: relative;
     }
 }
+
+

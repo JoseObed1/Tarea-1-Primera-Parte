@@ -8,106 +8,43 @@
 
 
 <link href="~/css/styleLR.css" rel="stylesheet" />
-<section class="user">
-    <div class="user_options-container">
-        <div class="user_options-text">
-            <div class="user_options-unregistered">
-                <h2 class="user_unregistered-title">No tienes cuenta?</h2>
-                <p class="user_unregistered-text">Puedes registrarte a DGDN de una manera muy sencilla, solo click abajo.</p>
-                <button class="user_unregistered-signup" id="signup-button">Registrate</button>
+<main>
+    <div class="contenedo__todo">
+        <div class="caja__trasera">
+            <div class="caja__trasera-login">
+                <h3>¿Ya tienes una cuenta?</h3>
+                <p>Inicia sesion para poder publicar una vacante</p>
+                <button id="btn__iniciar-sesion">iniciar sesión</button>
             </div>
-
-            <div class="user_options-registered">
-                <h2 class="user_registered-title">Ya tienes una cuenta?</h2>
-                <p class="user_registered-text">Accede a tu cuenta.</p>
-                <button class="user_registered-login" id="login-button">Inicia Sesion</button>
+            <div class="caja__trasera-register">
+                <h3>¿Aún no tienes una cuenta?</h3>
+                <p>Registrate para que puedas iniciar sesión </p>
+                <button id="btn__Registrarse">Registar</button>
             </div>
         </div>
+        <!-- Login y registro -->
+        <div class="contenedor__login-register">
+            <!-- Login -->
+            <form action="" class="formulario__login">
+                <h2>iniciar Sesión</h2>
+                <input type="text" placeholder="Correo Electronico">
+                <input type="password" placeholder="Contraseña">
+                <button>Entrar</button>
 
-        <div class="user_options-forms" id="user_options-forms">
-            <div class="user_forms-login">
-                @using (Html.BeginForm("nuevoPost", "Home"))
-                {
-                    @Html.AntiForgeryToken()
-                    <h2 class="forms_title">Inicio Sesion</h2>
-                    <form class="forms_form">
-                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-                        <fieldset class="forms_fieldset">
-                            <div class="forms_field">
-                                @*@Html.EditorFor(model => model.email, new { htmlAttributes = new { @class = "form-control forms_field-input", @placeholder = "E-mail" } })
-                                @Html.ValidationMessageFor(model => model.email, "", new { @class = "text-danger" })*@
-                                @*<input type="email" placeholder="Email" class="forms_field-input" required autofocus />*@
-                            </div>
-                            <div class="forms_field">
-                                @*@Html.EditorFor(model => model.password, new { htmlAttributes = new { @class = "form-control forms_field-input", @placeholder = "Password" } })
-                                @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })*@
-                                @*<input type="password" placeholder="Password" class="forms_field-input" required />*@
-                            </div>
-                        </fieldset>
 
-                        <div class="forms_buttons">
-                            <input type="submit" value="Accede" class="forms_buttons-action">
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-offset-2 col-md-10">
-                                <label>@ViewBag.Notification</label>
-                            </div>
-                        </div>
-                    </form>
-                }
-            </div>
-            <div class="user_forms-signup">
-                @using (Html.BeginForm("nuevoPost", "Home"))
-                {
-                    <h2 class="forms_title">Registrate</h2>
-                    <form class="forms_form">
-                        <fieldset class="forms_fieldset">
-                            <div class="forms_field">
-                                @*@Html.EditorFor(model => model.ID, new { htmlAttributes = new { @class = "form-control forms_field-input", @placeholder = "ID" } })
-                                @Html.ValidationMessageFor(model => model.ID, "", new { @class = "text-danger" })*@
-                                @*<input type="text" placeholder="Full Name" class="forms_field-input" required />*@
-                            </div>
-                            <div class="forms_field">
-                                @*@Html.EditorFor(model => model.nombre, new { htmlAttributes = new { @class = "form-control forms_field-input", @placeholder = "Nombre" } })
-                                @Html.ValidationMessageFor(model => model.nombre, "", new { @class = "text-danger" })*@
-                                @*<input type="email" placeholder="Email" class="forms_field-input" required />*@
-                            </div>
-                            <div class="forms_field">
-                                @*@Html.EditorFor(model => model.departamento, new { htmlAttributes = new { @class = "form-control forms_field-input", @placeholder = "Departamento" } })
-                                @Html.ValidationMessageFor(model => model.departamento, "", new { @class = "text-danger" })*@
-                                @*<input type="password" placeholder="Password" class="forms_field-input" required />*@
-                            </div>
-                            <div class="forms_field">
-                                @*@Html.EditorFor(model => model.cargo, new { htmlAttributes = new { @class = "form-control forms_field-input", @placeholder = "Cargo" } })
-                                @Html.ValidationMessageFor(model => model.cargo, "", new { @class = "text-danger" })*@
-                            </div>
-                            <div class="forms_field">
-                                @*@Html.EditorFor(model => model.email, new { htmlAttributes = new { @class = "form-control forms_field-input", @placeholder = "E-Mail" } })
-                                @Html.ValidationMessageFor(model => model.email, "", new { @class = "text-danger" })*@
-                            </div>
-                            <div class="forms_field">
-                                @*@Html.EditorFor(model => model.password, new { htmlAttributes = new { @class = "form-control forms_field-input", @placeholder = "Password" } })
-                                @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })*@
-                            </div>
-                            <div class="forms_field">
+            </form>
+            <!-- Registro -->
+            <form action="" class="formulario__register">
+                <h2>Registraese</h2>
+                <input type="text" placeholder="Nombre Completo">
+                <input type="text" placeholder="Correo Electronico">
+                <input type="text" placeholder="Usuario">
+                <input type="password" placeholder="Contraseña">
+                <button>Registrarse</button>
+            </form>
 
-                            </div>
-                        </fieldset>
-                        <div class="forms_buttons">
-                            <input type="submit" value="Registrate" class="forms_buttons-action">
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-offset-2 col-md-10">
-                                <label>@ViewBag.Notification</label>
-                            </div>
-                        </div>
 
-                    </form>
-
-                }
-
-            </div>
         </div>
     </div>
-</section>
-<script src="~/js/scriptLR.js"></script>
+</main>
+<script src="~/js/scriptLR.js" ></script>

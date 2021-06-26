@@ -1,23 +1,27 @@
-﻿/**
- * Variables
- */
-var signupButton = document.getElementById('signup-button');
-var loginButton = document.getElementById('login-button');
-var userForms = document.getElementById('user_options-forms');
+﻿document.getElementById("btn__Registrarse").addEventListener("click", register);
+document.getElementById("btn__iniciar-sesion").addEventListener("click", iniciarSesion);
 
-/**
- * Add event listener to the "Sign Up" button
- */
-signupButton.addEventListener('click', () => {
-    userForms.classList.remove('bounceRight')
-    userForms.classList.add('bounceLeft')
-}, false)
+/Declaracion de variable/
+var contenedor_login_register = document.querySelector(".contenedor__login-register");
+var formulario_login = document.querySelector(".formulario__login");
+var formulario_register = document.querySelector(".formulario__register");
+var caja_trasera_login = document.querySelector(".caja__trasera-login");
+var caja_trasera_register = document.querySelector(".caja__trasera-register");
 
-/**
- * Add event listener to the "Login" button
- */
-loginButton.addEventListener('click', () => {
-    userForms.classList.remove('bounceLeft')
-    userForms.classList.add('bounceRight')
-}, false)
+function iniciarSesion() {
+    formulario_register.style.display = "none";
+    contenedor_login_register.style.left = "10px";
+    caja_trasera_login.style.display = "block";
+    caja_trasera_register.style.opacity = "1";
+    caja_trasera_login.style.opacity = "0";
+
+}
+
+function register() {
+    formulario_register.style.display = "block";
+    contenedor_login_register.style.left = "450px";
+    caja_trasera_register.style.opacity = "0";
+    caja_trasera_login.style.opacity = "1";
+
+}
 

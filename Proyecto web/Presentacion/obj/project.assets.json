@@ -1025,19 +1025,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jose\\.nuget\\packages\\": {}
+    "C:\\Users\\eudyc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto web\\Presentacion\\Presentacion.csproj",
+      "projectUniqueName": "C:\\Users\\eudyc\\OneDrive\\Documentos\\GitHub\\Tarea-1-Primera-Parte\\Proyecto web\\Presentacion\\Presentacion.csproj",
       "projectName": "Presentacion",
-      "projectPath": "C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto web\\Presentacion\\Presentacion.csproj",
-      "packagesPath": "C:\\Users\\Jose\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto web\\Presentacion\\obj\\",
+      "projectPath": "C:\\Users\\eudyc\\OneDrive\\Documentos\\GitHub\\Tarea-1-Primera-Parte\\Proyecto web\\Presentacion\\Presentacion.csproj",
+      "packagesPath": "C:\\Users\\eudyc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\eudyc\\OneDrive\\Documentos\\GitHub\\Tarea-1-Primera-Parte\\Proyecto web\\Presentacion\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Jose\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\eudyc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
