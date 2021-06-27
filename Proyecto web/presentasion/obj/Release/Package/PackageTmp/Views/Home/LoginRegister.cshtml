@@ -1,0 +1,50 @@
+﻿@*@model Capa_Entidad.empleados
+
+@{
+    ViewBag.Title = "Index";
+}*@
+
+@*<h2>Index1</h2>*@
+
+
+<link href="~/Content/css/styleLR.css" rel="stylesheet" />
+<main>
+    <div class="contenedo__todo">
+        <div class="caja__trasera">
+            <div class="caja__trasera-login">
+                <h3>¿Ya tienes una cuenta?</h3>
+                <p>Inicia sesion para poder publicar una vacante</p>
+                <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+            </div>
+            <div class="caja__trasera-register">
+                <h3>¿Aún no tienes una cuenta?</h3>
+                <p>Registrate para que puedas iniciar sesión </p>
+                <button id="btn__Registrarse">Registrar</button>
+            </div>
+        </div>
+        <!-- Login y registro -->
+        <div class="contenedor__login-register">
+            <!-- Login -->
+            <form action="" class="formulario__login">
+                <h2>Iniciar Sesión</h2>
+                <input type="text" placeholder="Correo Electronico">
+                <input type="password" placeholder="Contraseña">
+                <button>Entrar</button>
+
+
+            </form>
+            <!-- Registro -->
+            <form action="" class="formulario__register">
+                <h2>Registrarse</h2>
+                <input type="text" placeholder="Nombre Completo">
+                <input type="text" placeholder="Correo Electronico">
+                <input type="text" placeholder="Usuario">
+                <input type="password" placeholder="Contraseña">
+                <button>Registrarse</button>
+            </form>
+
+
+        </div>
+    </div>
+</main>
+<script src="~/Content/js/scriptLR.js" ></script>

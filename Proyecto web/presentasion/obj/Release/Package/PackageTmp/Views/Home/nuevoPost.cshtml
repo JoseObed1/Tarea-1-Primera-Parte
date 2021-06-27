@@ -1,0 +1,63 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<link href="~/css/styles.css" rel="stylesheet" />
+
+<form class="was-validated">
+
+    <div class="mb-3">
+        <label for="validationTextarea" class="form-label">Nombre de la Vacante</label>
+        <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Nombre vacante aqui..." required></textarea>
+        <div class="invalid-feedback">
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="validationTextarea" class="form-label">Requisitos para cumplir con el puesto</label>
+        <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Informacion necesaria..." required></textarea>
+        <div class="invalid-feedback">
+        </div>
+    </div>
+
+
+    <div class="form-check">
+        <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+        <label class="form-check-label" for="validationFormCheck2">Contrato a tiempo definido</label>
+    </div>
+    <div class="form-check mb-3">
+        <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+        <label class="form-check-label" for="validationFormCheck3">Contrato a tiempo indefinido</label>
+    </div>
+
+    <div class="mb-3">
+        <select class="form-select" required aria-label="select example">
+            <option value="">Numero de vacantes disponibles</option>
+            <option value="1">Uno</option>
+            <option value="2">Dos</option>
+            <option value="3">Tres</option>
+            <option value="3">Cinco</option>
+            <option value="3">Diez</option>
+            <option value="3">Quince</option>
+            <option value="3">Mas de Veinte</option>
+        </select>
+        <div class="invalid-feedback">No dejar vacio</div>
+    </div>
+
+
+    <div class="mb-3">
+        <input type="file" class="form-control" aria-label="file example" required>
+        <div class="invalid-feedback">Sube tu Curriculum Vitae aqui</div>
+    </div>
+
+    <div class="form-check mb-3">
+        <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
+        <label class="form-check-label" for="validationFormCheck1">Eres humano?</label>
+        <div class="invalid-feedback">Example invalid feedback text</div>
+    </div>
+
+    <div class="mb-3">
+        <button class="btn btn-primary" type="submit" disabled>Crear Post</button>
+    </div>
+</form>
