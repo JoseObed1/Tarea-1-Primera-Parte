@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication3
+namespace WebApplication3.App_Data
 {
     using System;
     using System.Data.Entity;

@@ -9,6 +9,8 @@ namespace WebApplication3.Controllers
 {
     public class HomeController : Controller
     {
+        DBTest testeo = new DBTest();
+
         //private readonly ILogger<HomeController> _logger;
 
         /*public HomeController(ILogger<HomeController> logger)
@@ -18,6 +20,7 @@ namespace WebApplication3.Controllers
 
         public ActionResult Index()
         {
+            testeo.VisualizarDatos("1");
             return View();
         }
 
