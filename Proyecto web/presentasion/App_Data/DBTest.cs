@@ -13,8 +13,8 @@ namespace WebApplication3
         {
             Tarea1Entities db = new Tarea1Entities();
 
-            Cuentas cuentas = db.Cuentas.Find(id);
-            System.Diagnostics.Debug.WriteLine(cuentas.Correo.ToString());
+            //Cuentas cuentas = db.Cuentas.Find(id);
+            //System.Diagnostics.Debug.WriteLine(cuentas.Correo.ToString());
         }
 
     }

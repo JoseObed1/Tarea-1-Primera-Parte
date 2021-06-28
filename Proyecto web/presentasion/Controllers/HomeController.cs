@@ -20,7 +20,7 @@ namespace WebApplication3.Controllers
 
         public ActionResult Index()
         {
-            testeo.VisualizarDatos("1");
+            //testeo.VisualizarDatos("1");
             return View();
         }
 
