@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="Tarea1Entities-Web.config Connection String" description="Tarea1Entities Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=LAPTOP-TDEQE0Q5\SQLEXPRESS;initial catalog=Tarea1;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto\ web\\presentasion\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Tarea1Entities']/@connectionString" />
-  </parameter>
-</parameters>

@@ -10,7 +10,7 @@ namespace WebApplication3
 {
     public class DBTest
     {
-        /*tarea1Entities db = new tarea1Entities();
+        Online db = new Online();
 
         public void VisualizarDatos(string id)
         {
@@ -59,7 +59,7 @@ namespace WebApplication3
                 System.Diagnostics.Debug.WriteLine("Sad Programmer Noises");
                 return false;
             }
-        }*/
+        }
 
     }
 }

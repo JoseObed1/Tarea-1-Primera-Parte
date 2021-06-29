@@ -11,7 +11,7 @@ namespace WebApplication3.App_Data
 {
     using System;
     using System.Collections.Generic;
-    
+
     public partial class Foro
     {
         public string Nombre { get; set; }

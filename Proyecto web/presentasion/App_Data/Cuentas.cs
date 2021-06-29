@@ -11,19 +11,24 @@ namespace WebApplication3.App_Data
 {
     using System;
     using System.Collections.Generic;
-    using System.Linq;
-    using System.Web;
     using System.ComponentModel.DataAnnotations;
 
     public partial class Cuentas
     {
-        [Required(ErrorMessage = "Debe ingresar su correo!")]
+        public string user_id { get; set; }
+
+        [Required(ErrorMessage ="Debes escribir tu correo!")]
         public string Correo { get; set; }
 
-        [Required(ErrorMessage = "Debe ingresar su contraseña!")]
+        [Required(ErrorMessage = "Debes escribir tu contraseña!")]
         public string Password { get; set; }
+
+        [Required(ErrorMessage = "Debes escribir tu Nombre de usuario!")]
         public string Username { get; set; }
+
+        [Required(ErrorMessage = "Debes escribir tu Compañía!")]
         public string Compania { get; set; }
+
         public byte[] Foto { get; set; }
     }
 }

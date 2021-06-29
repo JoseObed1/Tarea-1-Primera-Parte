@@ -173,69 +173,30 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Data\Categorias.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Categorias.cs">
       <DependentUpon>Online.tt</DependentUpon>
     </Compile>
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="App_Data\Cuentas.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="App_Data\Foro.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="App_Data\DBTest.cs" />
-    <Compile Include="Cuentas.cs">
+    <Compile Include="App_Data\Cuentas.cs">
       <DependentUpon>Online.tt</DependentUpon>
     </Compile>
-    <Compile Include="Foro.cs">
+    <Compile Include="App_Data\Foro.cs">
       <DependentUpon>Online.tt</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="App_Data\Model1.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="App_Data\Model1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="App_Data\Model1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Model1.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Online.Context.cs">
+    <Compile Include="App_Data\Online.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Online.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Online.cs">
+    <Compile Include="App_Data\Online.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Online.tt</DependentUpon>
     </Compile>
-    <Compile Include="Online.Designer.cs">
+    <Compile Include="App_Data\Online.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Online.edmx</DependentUpon>
@@ -284,32 +245,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Sitessss.css" />
-    <Content Include="App_Data\Model1.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="App_Data\Model1.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.cs</LastGenOutput>
-    </Content>
-    <Content Include="Model1.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Model1.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.cs</LastGenOutput>
-    </Content>
-    <Content Include="Online.Context.tt">
+    <Content Include="App_Data\Online.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Online.edmx</DependentUpon>
       <LastGenOutput>Online.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Online.tt">
+    <Content Include="App_Data\Online.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Online.edmx</DependentUpon>
       <LastGenOutput>Online.cs</LastGenOutput>
@@ -334,54 +275,11 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
-    <Content Include="asdasdsa\css\site.css" />
-    <Content Include="asdasdsa\css\sobren.css" />
-    <Content Include="asdasdsa\css\styleLR.css" />
-    <Content Include="asdasdsa\css\styles.css" />
-    <Content Include="asdasdsa\favicon.ico" />
-    <Content Include="asdasdsa\img\fondo 2.jpg" />
-    <Content Include="asdasdsa\js\scriptLR.js" />
-    <Content Include="asdasdsa\js\scripts.js" />
-    <Content Include="asdasdsa\js\site.js" />
-    <Content Include="asdasdsa\lib\bootstrap\dist\css\bootstrap-grid.css" />
-    <Content Include="asdasdsa\lib\bootstrap\dist\css\bootstrap-grid.min.css" />
-    <Content Include="asdasdsa\lib\bootstrap\dist\css\bootstrap-reboot.css" />
-    <Content Include="asdasdsa\lib\bootstrap\dist\css\bootstrap-reboot.min.css" />
-    <Content Include="asdasdsa\lib\bootstrap\dist\css\bootstrap.css" />
-    <Content Include="asdasdsa\lib\bootstrap\dist\css\bootstrap.min.css" />
-    <Content Include="asdasdsa\lib\bootstrap\dist\js\bootstrap.bundle.js" />
-    <Content Include="asdasdsa\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
-    <Content Include="asdasdsa\lib\bootstrap\dist\js\bootstrap.js" />
-    <Content Include="asdasdsa\lib\bootstrap\dist\js\bootstrap.min.js" />
-    <Content Include="asdasdsa\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
-    <Content Include="asdasdsa\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
-    <Content Include="asdasdsa\lib\jquery-validation-unobtrusive\LICENSE.txt" />
-    <Content Include="asdasdsa\lib\jquery-validation\dist\additional-methods.js" />
-    <Content Include="asdasdsa\lib\jquery-validation\dist\additional-methods.min.js" />
-    <Content Include="asdasdsa\lib\jquery-validation\dist\jquery.validate.js" />
-    <Content Include="asdasdsa\lib\jquery-validation\dist\jquery.validate.min.js" />
-    <Content Include="asdasdsa\lib\jquery\dist\jquery.js" />
-    <Content Include="asdasdsa\lib\jquery\dist\jquery.min.js" />
-    <Content Include="asdasdsa\lib\jquery\LICENSE.txt" />
-    <EntityDeploy Include="App_Data\Model1.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="App_Data\Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </Content>
-    <EntityDeploy Include="Model1.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </Content>
-    <EntityDeploy Include="Online.edmx">
+    <EntityDeploy Include="App_Data\Online.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Online.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Online.edmx.diagram">
+    <Content Include="App_Data\Online.edmx.diagram">
       <DependentUpon>Online.edmx</DependentUpon>
     </Content>
     <None Include="Properties\PublishProfiles\IISProfile.pubxml" />
@@ -412,23 +310,10 @@
     <Content Include="Views\Home\nuevoPost.cshtml" />
     <Content Include="Views\Home\Privacy.cshtml" />
     <Content Include="Views\Home\Sobrenosotros.cshtml" />
-    <Content Include="asdasdsa\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
-    <Content Include="asdasdsa\lib\bootstrap\dist\css\bootstrap-grid.min.css.map" />
-    <Content Include="asdasdsa\lib\bootstrap\dist\css\bootstrap-reboot.css.map" />
-    <Content Include="asdasdsa\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
-    <Content Include="asdasdsa\lib\bootstrap\dist\css\bootstrap.css.map" />
-    <Content Include="asdasdsa\lib\bootstrap\dist\css\bootstrap.min.css.map" />
-    <Content Include="asdasdsa\lib\bootstrap\dist\js\bootstrap.bundle.js.map" />
-    <Content Include="asdasdsa\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
-    <Content Include="asdasdsa\lib\bootstrap\dist\js\bootstrap.js.map" />
-    <Content Include="asdasdsa\lib\bootstrap\dist\js\bootstrap.min.js.map" />
-    <Content Include="asdasdsa\lib\bootstrap\LICENSE" />
-    <Content Include="asdasdsa\lib\jquery-validation\LICENSE.md" />
-    <Content Include="asdasdsa\lib\jquery\dist\jquery.min.map" />
-    <Content Include="asdasdsa\sass\filter.sass" />
     <Content Include="Views\Home\Contactos.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="asdasdsa\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Default\" />
   </ItemGroup>

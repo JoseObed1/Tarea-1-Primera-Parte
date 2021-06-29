@@ -4,6 +4,7 @@ using Microsoft.Extensions.Logging;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebApplication3.App_Data;
 
 namespace WebApplication3.Controllers
 {
@@ -27,12 +28,9 @@ namespace WebApplication3.Controllers
             return View();
         }
 
-        [HttpGet]
-        public ActionResult LoginRegister()
+        public ActionResult LoginRegister(string error)
         {
             return View();
-
-
         }        
         
         [HttpPost]
@@ -40,28 +38,26 @@ namespace WebApplication3.Controllers
         {
             if (ModelState.IsValid)
             {
-                /*string tempomail = datos.Correo;
+                string tempomail = datos.Correo;
                 string tempopass = datos.Password;
-                if (Logeador.ValidarLogin(tempomail, tempopass) == true)
+
+                if (testeo.ValidarLogin(tempomail, tempopass) == true)
                 {
-                    TempData["Usuario"] = tempomail;
-                    RedirectToAction("Login", new { data = data });
-                    return View("Index", new { data });
+                    RedirectToAction("Index");
+                    return View("Index");
                 }
 
                 else
                 {
-                    ViewBag.Mensaje = "Ese usuario no existe!";
-                    return View();
-                }*/
-
-                return View();
+                    @ViewBag.Notification = "Ese usuario no existe!";
+                    return View("LoginRegister");
+                }
             }
 
             else
             {
                 ViewBag.Mensaje = "xD";
-                return View();
+                return View("LoginRegister");
             }
         }
 
