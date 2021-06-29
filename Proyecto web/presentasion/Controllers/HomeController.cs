@@ -11,13 +11,6 @@ namespace WebApplication3.Controllers
     {
         DBTest testeo = new DBTest();
 
-        //private readonly ILogger<HomeController> _logger;
-
-        /*public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }*/
-
         public ActionResult Index()
         {
             //testeo.VisualizarDatos("1");
@@ -34,9 +27,42 @@ namespace WebApplication3.Controllers
             return View();
         }
 
+        [HttpGet]
         public ActionResult LoginRegister()
         {
             return View();
+
+
+        }        
+        
+        [HttpPost]
+        public ActionResult LoginRegister(Cuentas datos)
+        {
+            if (ModelState.IsValid)
+            {
+                /*string tempomail = datos.Correo;
+                string tempopass = datos.Password;
+                if (Logeador.ValidarLogin(tempomail, tempopass) == true)
+                {
+                    TempData["Usuario"] = tempomail;
+                    RedirectToAction("Login", new { data = data });
+                    return View("Index", new { data });
+                }
+
+                else
+                {
+                    ViewBag.Mensaje = "Ese usuario no existe!";
+                    return View();
+                }*/
+
+                return View();
+            }
+
+            else
+            {
+                ViewBag.Mensaje = "xD";
+                return View();
+            }
         }
 
 

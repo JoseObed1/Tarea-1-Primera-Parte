@@ -11,10 +11,16 @@ namespace WebApplication3.App_Data
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.Linq;
+    using System.Web;
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Cuentas
     {
+        [Required(ErrorMessage = "Debe ingresar su correo!")]
         public string Correo { get; set; }
+
+        [Required(ErrorMessage = "Debe ingresar su contraseña!")]
         public string Password { get; set; }
         public string Username { get; set; }
         public string Compania { get; set; }
