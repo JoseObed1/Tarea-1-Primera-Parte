@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="Tarea1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+<Schema Namespace="tarea1Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityType Name="Categorias">
     <Key>
       <PropertyRef Name="ID_Categoria" />
@@ -31,7 +31,7 @@
     <Property Name="Ubicacion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="Url" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
-  <EntityContainer Name="Tarea1Entities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="tarea1Entities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Categorias" EntityType="Self.Categorias" />
     <EntitySet Name="Cuentas" EntityType="Self.Cuentas" />
     <EntitySet Name="Foro" EntityType="Self.Foro" />

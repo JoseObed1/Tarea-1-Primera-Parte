@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="Tarea1ModelStoreContainer" CdmEntityContainer="Tarea1Entities">
+  <EntityContainerMapping StorageEntityContainer="tarea1ModelStoreContainer" CdmEntityContainer="tarea1Entities">
     <EntitySetMapping Name="Categorias">
-      <EntityTypeMapping TypeName="Tarea1Model.Categorias">
+      <EntityTypeMapping TypeName="tarea1Model.Categorias">
         <MappingFragment StoreEntitySet="Categorias">
           <ScalarProperty Name="Nombre" ColumnName="Nombre" />
           <ScalarProperty Name="ID_Categoria" ColumnName="ID_Categoria" />
@@ -10,7 +10,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Cuentas">
-      <EntityTypeMapping TypeName="Tarea1Model.Cuentas">
+      <EntityTypeMapping TypeName="tarea1Model.Cuentas">
         <MappingFragment StoreEntitySet="Cuentas">
           <ScalarProperty Name="Correo" ColumnName="Correo" />
           <ScalarProperty Name="Password" ColumnName="Password" />
@@ -21,7 +21,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Foro">
-      <EntityTypeMapping TypeName="Tarea1Model.Foro">
+      <EntityTypeMapping TypeName="tarea1Model.Foro">
         <MappingFragment StoreEntitySet="Foro">
           <ScalarProperty Name="Nombre" ColumnName="Nombre" />
           <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />

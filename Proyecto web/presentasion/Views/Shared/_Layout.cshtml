@@ -10,7 +10,7 @@
     <link href="~/Content/css/styles.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-primary border-bottom box-shadow mb-3">
+    <div class="navbar navbar-expand-lg navbar-toggleable-lg navbar-light bg-primary border-bottom box-shadow lg-3">
         <div class="container">
             <div class="navbar-header">
                 @Html.ActionLink("ServiTra", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
@@ -21,7 +21,7 @@
                         @Html.ActionLink("Privacy", "Privacy", "Home", new { style = "text-decoration:none; color:white" })
                     </li>
                     <li class="nav-link text-light">
-                        @Html.ActionLink("Sobre Nosotros", "Sobrenosotros", "Home", new { style = "text-decoration:none; color:white"})
+                        @Html.ActionLink("Sobre Nosotros", "Sobrenosotros", "Home", new { style = "text-decoration:none; color:white" })
                     </li>
                     <li class="nav-link text-light">
                         @Html.ActionLink("Contactos", "Contactos", "Home", new { style = "text-decoration:none; color:white" })
@@ -46,9 +46,8 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/Content/lib/bootstrap/dist/css/bootstrap.min.css")
     @Scripts.Render("~/Content/js/site.js")
-    @Styles.Render("~/Content/Site.css")
-    @*<script src="~/Content/js/scripts.js"></script>
-    *@
+    @*@Styles.Render("~/Content/css/Site.css")*@
+    @*<script src="~/Content/js/scripts.js"></script>*@
     @RenderSection("scripts", required: false)
 </body>
 </html>
