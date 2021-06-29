@@ -1,50 +1,101 @@
 ﻿@*@model Capa_Entidad.empleados
 
-@{
-    ViewBag.Title = "Index";
-}*@
+    @{
+        ViewBag.Title = "Index";
+    }*@
 
 @*<h2>Index1</h2>*@
 
 
 <link href="~/Content/css/styleLR.css" rel="stylesheet" />
-<main>
-    <div class="contenedo__todo">
-        <div class="caja__trasera">
-            <div class="caja__trasera-login">
-                <h3>¿Ya tienes una cuenta?</h3>
-                <p>Inicia sesion para poder publicar una vacante</p>
-                <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+
+<section class="user">
+    <div class="user_options-container">
+        <div class="user_options-text">
+            <div class="user_options-unregistered">
+                <h2 class="user_unregistered-title">No tienes cuenta?</h2>
+                <p class="user_unregistered-text">Registrate a ServiTra para que puedas publicar ofertas de trabajo!</p>
+                <button class="user_unregistered-signup" id="signup-button">Registrate</button>
             </div>
-            <div class="caja__trasera-register">
-                <h3>¿Aún no tienes una cuenta?</h3>
-                <p>Registrate para que puedas iniciar sesión </p>
-                <button id="btn__Registrarse">Registrar</button>
+
+            <div class="user_options-registered">
+                <h2 class="user_registered-title">Ya tienes una cuenta en ServiTra?</h2>
+                <p class="user_registered-text">Accede a tu cuenta.</p>
+                <button class="user_registered-login" id="login-button">Inicia Sesion</button>
             </div>
         </div>
-        <!-- Login y registro -->
-        <div class="contenedor__login-register">
-            <!-- Login -->
-            <form action="" class="formulario__login">
-                <h2>Iniciar Sesión</h2>
-                <input type="text" placeholder="Correo Electronico">
-                <input type="password" placeholder="Contraseña">
-                <button>Entrar</button>
 
+        <div class="user_options-forms" id="user_options-forms">
+            <div class="user_forms-login">
+                @using (Html.BeginForm("Index", "Home"))
+                {
+                    @Html.AntiForgeryToken()
+                    <h2 class="forms_title">Inicia Sesion</h2>
+                    <form class="forms_form">
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        <fieldset class="forms_fieldset">
+                            <div class="forms_field">
+                                @*@Html.EditorFor(model => model.email, new { htmlAttributes = new { @class = "form-control forms_field-input", @placeholder = "E-mail" } })
+                                @Html.ValidationMessageFor(model => model.email, "", new { @class = "text-danger" })*@
+                            </div>
+                            <div class="forms_field">
+                                @*@Html.EditorFor(model => model.password, new { htmlAttributes = new { @class = "form-control forms_field-input", @placeholder = "Password" } })
+                                @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })*@
+                            </div>
+                        </fieldset>
 
-            </form>
-            <!-- Registro -->
-            <form action="" class="formulario__register">
-                <h2>Registrarse</h2>
-                <input type="text" placeholder="Nombre Completo">
-                <input type="text" placeholder="Correo Electronico">
-                <input type="text" placeholder="Usuario">
-                <input type="password" placeholder="Contraseña">
-                <button>Registrarse</button>
-            </form>
+                        <div class="forms_buttons">
+                            <input type="submit" value="Accede" class="forms_buttons-action">
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <label>@ViewBag.Notification</label>
+                            </div>
+                        </div>
+                    </form>
+                }
+            </div>
+            <div class="user_forms-signup">
+                @using (Html.BeginForm("Index", "Home"))
+                {
+                    <h2 class="forms_title">Registrate</h2>
+                    <form class="forms_form">
+                        <fieldset class="forms_fieldset">
+                            
+                            <div class="forms_field">
+                                @*@Html.EditorFor(model => model.nombre, new { htmlAttributes = new { @class = "form-control forms_field-input", @placeholder = "Nombre" } })
+                                @Html.ValidationMessageFor(model => model.nombre, "", new { @class = "text-danger" })*@
+                            </div>
+                            <div class="forms_field">
+                                @*@Html.EditorFor(model => model.compañia, new { htmlAttributes = new { @class = "form-control forms_field-input", @placeholder = "Compañia" } })
+                                @Html.ValidationMessageFor(model => model.compañia, "", new { @class = "text-danger" })*@
+                            </div>
+                            <div class="forms_field">
+                                @*@Html.EditorFor(model => model.email, new { htmlAttributes = new { @class = "form-control forms_field-input", @placeholder = "E-Mail" } })
+                                @Html.ValidationMessageFor(model => model.email, "", new { @class = "text-danger" })*@
+                            </div>
+                            <div class="forms_field">
+                                @*@Html.EditorFor(model => model.password, new { htmlAttributes = new { @class = "form-control forms_field-input", @placeholder = "Password" } })
+                                @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })*@
+                            </div>
+>
+                        </fieldset>
+                        <div class="forms_buttons">
+                            <input type="submit" value="Registrate" class="forms_buttons-action">
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <label>@ViewBag.Notification</label>
+                            </div>
+                        </div>
 
+                    </form>
 
+                }
+
+            </div>
         </div>
     </div>
-</main>
-<script src="~/Content/js/scriptLR.js" ></script>
+</section>
+
+<script src="~/Content/js/scriptLR.js"></script>
