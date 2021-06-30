@@ -172,32 +172,32 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Categorias.cs">
+    <Compile Include="App_Data\Categorias.cs">
       <DependentUpon>Tarea1Entities.tt</DependentUpon>
     </Compile>
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="App_Data\DBTest.cs" />
-    <Compile Include="Cuentas.cs">
+    <Compile Include="App_Data\Cuentas.cs">
       <DependentUpon>Tarea1Entities.tt</DependentUpon>
     </Compile>
-    <Compile Include="Foro.cs">
+    <Compile Include="App_Data\Foro.cs">
       <DependentUpon>Tarea1Entities.tt</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tarea1Entities.Context.cs">
+    <Compile Include="App_Data\Tarea1Entities.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Tarea1Entities.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Tarea1Entities.cs">
+    <Compile Include="App_Data\Tarea1Entities.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Tarea1Entities.tt</DependentUpon>
     </Compile>
-    <Compile Include="Tarea1Entities.Designer.cs">
+    <Compile Include="App_Data\Tarea1Entities.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Tarea1Entities.edmx</DependentUpon>
@@ -285,12 +285,12 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Tarea1Entities.Context.tt">
+    <Content Include="App_Data\Tarea1Entities.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Tarea1Entities.edmx</DependentUpon>
       <LastGenOutput>Tarea1Entities.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Tarea1Entities.tt">
+    <Content Include="App_Data\Tarea1Entities.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Tarea1Entities.edmx</DependentUpon>
       <LastGenOutput>Tarea1Entities.cs</LastGenOutput>
@@ -312,16 +312,15 @@
     <Content Include="Views\Home\Privacy.cshtml" />
     <Content Include="Views\Home\Sobrenosotros.cshtml" />
     <Content Include="Views\Home\Contactos.cshtml" />
-    <EntityDeploy Include="Tarea1Entities.edmx">
+    <EntityDeploy Include="App_Data\Tarea1Entities.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Tarea1Entities.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Tarea1Entities.edmx.diagram">
+    <Content Include="App_Data\Tarea1Entities.edmx.diagram">
       <DependentUpon>Tarea1Entities.edmx</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="asdasdsa\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Default\" />
   </ItemGroup>

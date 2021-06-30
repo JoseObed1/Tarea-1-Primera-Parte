@@ -10,7 +10,7 @@ namespace WebApplication3
 {
     public class DBTest
     {
-        Online db = new Online();
+        Online1 db = new Online1();
 
         public void VisualizarDatos(string id)
         {
@@ -46,7 +46,7 @@ namespace WebApplication3
 
         public bool ValidarLogin(string correo, string contra)
         {
-            var existe = db.Cuentas.FirstOrDefault(tempolog => tempolog.Username == correo && tempolog.Password == contra);
+            var existe = db.Cuentas.FirstOrDefault(tempolog => tempolog.Correo == correo && tempolog.Password == contra);
 
             if (existe != null)
             {

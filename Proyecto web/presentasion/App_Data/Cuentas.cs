@@ -7,21 +7,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication3
+namespace WebApplication3.App_Data
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Foro
+    public partial class Cuentas
     {
-        public string Nombre { get; set; }
-        public string Descripcion { get; set; }
-        public string Autor { get; set; }
-        public string ID_Foro { get; set; }
-        public byte[] Logo { get; set; }
-        public string ID_Categoria { get; set; }
-        public string Correo_Compania { get; set; }
-        public string Ubicacion { get; set; }
-        public string Url { get; set; }
+        public string Correo { get; set; }
+        public string Password { get; set; }
+        public string Username { get; set; }
+        public string Compania { get; set; }
+        public byte[] Foto { get; set; }
     }
 }

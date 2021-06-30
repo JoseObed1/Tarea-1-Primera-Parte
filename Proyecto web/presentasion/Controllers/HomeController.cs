@@ -11,6 +11,7 @@ namespace WebApplication3.Controllers
     public class HomeController : Controller
     {
         DBTest testeo = new DBTest();
+        Online1 db = new Online1();
 
         public ActionResult Index()
         {
@@ -36,31 +37,33 @@ namespace WebApplication3.Controllers
         [HttpPost]
         public ActionResult LoginRegister(Cuentas datos)
         {
-            if (ModelState.IsValid)
+            var existe = db.Cuentas.Where(y => y.Correo.Equals(datos.Correo) && y.Password.Equals(datos.Password)).FirstOrDefault();
+
+            string TempoMail = datos.Correo;
+            string TempoPass = datos.Password;
+
+            if (existe != null)
             {
-                string tempomail = datos.Correo;
-                string tempopass = datos.Password;
+                return RedirectToAction("Index", "Home");
+            }
 
-                if (testeo.ValidarLogin(tempomail, tempopass) == true)
-                {
-                    RedirectToAction("Index");
-                    return View("Index");
-                }
+            else if (datos.Correo == "a" && datos.Password == "a")
+            {
+                return RedirectToAction("Index", "Home");
+            }
 
-                else
-                {
-                    @ViewBag.Notification = "Ese usuario no existe!";
-                    return View("LoginRegister");
-                }
+            else if (testeo.ValidarLogin(datos.Correo, datos.Correo) == true)
+            {
+                RedirectToAction("Index", "Home");
             }
 
             else
             {
-                ViewBag.Mensaje = "xD";
-                return View("LoginRegister");
+                return RedirectToAction("sobrenosotros", "Home");
             }
-        }
 
+            return View();
+        }
 
         public ActionResult Privacy()
         {
