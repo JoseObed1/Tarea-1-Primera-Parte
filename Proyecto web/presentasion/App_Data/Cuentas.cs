@@ -14,6 +14,7 @@ namespace WebApplication3.App_Data
     
     public partial class Cuentas
     {
+        public int user_id { get; set; }
         public string Correo { get; set; }
         public string Password { get; set; }
         public string Username { get; set; }

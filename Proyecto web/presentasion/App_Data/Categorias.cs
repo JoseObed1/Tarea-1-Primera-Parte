@@ -15,6 +15,6 @@ namespace WebApplication3.App_Data
     public partial class Categorias
     {
         public string Nombre { get; set; }
-        public string ID_Categoria { get; set; }
+        public int ID_Categoria { get; set; }
     }
 }

@@ -10,7 +10,7 @@ namespace WebApplication3
 {
     public class DBTest
     {
-        EntitiesOffLine db = new EntitiesOffLine();
+        db_a7664c_tarea1Entities db = new db_a7664c_tarea1Entities();
 
         public void VisualizarDatos(string id)
         {

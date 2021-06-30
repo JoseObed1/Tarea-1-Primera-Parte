@@ -14,10 +14,10 @@ namespace WebApplication3.App_Data
     
     public partial class Foro
     {
+        public int ID_Foro { get; set; }
         public string Nombre { get; set; }
         public string Descripcion { get; set; }
         public string Autor { get; set; }
-        public string ID_Foro { get; set; }
         public byte[] Logo { get; set; }
         public string ID_Categoria { get; set; }
         public string Correo_Compania { get; set; }

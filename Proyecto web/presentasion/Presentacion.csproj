@@ -173,33 +173,33 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Data\Categorias.cs">
-      <DependentUpon>OffLine.tt</DependentUpon>
+      <DependentUpon>ModelOffline.tt</DependentUpon>
     </Compile>
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="App_Data\DBTest.cs" />
     <Compile Include="App_Data\Cuentas.cs">
-      <DependentUpon>OffLine.tt</DependentUpon>
+      <DependentUpon>ModelOffline.tt</DependentUpon>
     </Compile>
     <Compile Include="App_Data\Foro.cs">
-      <DependentUpon>OffLine.tt</DependentUpon>
+      <DependentUpon>ModelOffline.tt</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="App_Data\OffLine.Context.cs">
+    <Compile Include="App_Data\ModelOffline.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>OffLine.Context.tt</DependentUpon>
+      <DependentUpon>ModelOffline.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="App_Data\OffLine.cs">
+    <Compile Include="App_Data\ModelOffline.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>OffLine.tt</DependentUpon>
+      <DependentUpon>ModelOffline.tt</DependentUpon>
     </Compile>
-    <Compile Include="App_Data\OffLine.Designer.cs">
+    <Compile Include="App_Data\ModelOffline.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>OffLine.edmx</DependentUpon>
+      <DependentUpon>ModelOffline.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -253,15 +253,15 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Sitessss.css" />
-    <Content Include="App_Data\OffLine.Context.tt">
+    <Content Include="App_Data\ModelOffline.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>OffLine.edmx</DependentUpon>
-      <LastGenOutput>OffLine.Context.cs</LastGenOutput>
+      <DependentUpon>ModelOffline.edmx</DependentUpon>
+      <LastGenOutput>ModelOffline.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="App_Data\OffLine.tt">
+    <Content Include="App_Data\ModelOffline.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>OffLine.edmx</DependentUpon>
-      <LastGenOutput>OffLine.cs</LastGenOutput>
+      <DependentUpon>ModelOffline.edmx</DependentUpon>
+      <LastGenOutput>ModelOffline.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -283,12 +283,12 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
-    <EntityDeploy Include="App_Data\OffLine.edmx">
+    <EntityDeploy Include="App_Data\ModelOffline.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>OffLine.Designer.cs</LastGenOutput>
+      <LastGenOutput>ModelOffline.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="App_Data\OffLine.edmx.diagram">
-      <DependentUpon>OffLine.edmx</DependentUpon>
+    <Content Include="App_Data\ModelOffline.edmx.diagram">
+      <DependentUpon>ModelOffline.edmx</DependentUpon>
     </Content>
     <None Include="Properties\PublishProfiles\IISProfile.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
