@@ -3,25 +3,31 @@
 *@
 @{
 }
+@model WebApplication3.App_Data.Foro
+
 <link href="~/css/styles.css" rel="stylesheet" />
 
 <form class="was-validated">
 
     <div class="mb-3">
-        <label for="validationTextarea" class="form-label">Nombre de la Vacante</label>
-        <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Nombre vacante aqui..." required></textarea>
+        <label for="validationTextarea" class="form-label" style="padding-top: 30px">Nombre de la Vacante</label>
+        <section>
+            @Html.EditorFor(model => model.Nombre, new { htmlAttributes = new { @class = "form-control forms_field-input", @placeholder = "Nombre Vacante"} } )
+            @Html.ValidationMessageFor(model => model.Nombre, "", new { @class = "text-danger" })
+        </section>
         <div class="invalid-feedback">
         </div>
     </div>
 
     <div class="mb-3">
-        <label for="validationTextarea" class="form-label">Requisitos para cumplir con el puesto</label>
-        <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Informacion necesaria..." required></textarea>
+        <label for="validationTextarea" class="form-label" style="padding-top: 15px">Requisitos para cumplir con el puesto</label>
+        <textarea class="form-control is-invalid" id="validationTextarea" required @Html.EditorFor(model => model.Descripcion, new { htmlAttributes = new { @class = "form-control forms_field-input", @placeholder = "Informacion necesaria..." } })</textarea>
+        @Html.ValidationMessageFor(model => model.Descripcion, "", new { @class = "text-danger" })
         <div class="invalid-feedback">
         </div>
     </div>
 
-
+    <label for="validationTextarea" class="form-label" style="padding-top: 15px">Tipo de contrato</label>
     <div class="form-check">
         <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
         <label class="form-check-label" for="validationFormCheck2">Contrato a tiempo definido</label>
@@ -32,6 +38,7 @@
     </div>
 
     <div class="mb-3">
+        <label for="validationTextarea" class="form-label" style="padding-top: 15px">Cantidad de Vacantes</label>
         <select class="form-select" required aria-label="select example">
             <option value="">Numero de vacantes disponibles</option>
             <option value="1">Uno</option>
@@ -45,19 +52,48 @@
         <div class="invalid-feedback">No dejar vacio</div>
     </div>
 
+    <div class="mb-3">
+        <label for="validationTextarea" class="form-label" style="padding-top: 15px">Correo de la Empresa</label>
+        <section>
+            @Html.EditorFor(model => model.Correo_Compania, new { htmlAttributes = new { @class = "form-control forms_field-input", @placeholder = "Detalle su correo aqui..." } })
+            @Html.ValidationMessageFor(model => model.Correo_Compania, "", new { @class = "text-danger" })
+        </section>
+        <div class="invalid-feedback">
+        </div>
+    </div>
 
     <div class="mb-3">
+        <label for="validationTextarea" class="form-label" style="padding-top: 15px">Ubicacion de la Compañia</label>
+        <textarea class="form-control is-invalid" id="validationTextarea" required @Html.EditorFor(model => model.Ubicacion, new { htmlAttributes = new { @class = "form-control forms_field-input", @placeholder = "Ubicacion exacta..." } })</textarea>
+        @Html.ValidationMessageFor(model => model.Ubicacion, "", new { @class = "text-danger" })
+        <div class="invalid-feedback">
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="validationTextarea" class="form-label" style="padding-top: 15px">URL</label>
+        <section>
+            @Html.EditorFor(model => model.Url, new { htmlAttributes = new { @class = "form-control forms_field-input", @placeholder = "Pegue el URL de la pagina de la Compañia aqui..." } })
+            @Html.ValidationMessageFor(model => model.Url, "", new { @class = "text-danger" })
+        </section>
+        <div class="invalid-feedback">
+        </div>
+    </div>
+
+
+
+    @*<div class="mb-3">
         <input type="file" class="form-control" aria-label="file example" required>
         <div class="invalid-feedback">Sube tu Curriculum Vitae aqui</div>
-    </div>
+    </div>*@
 
     <div class="form-check mb-3">
-        <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
+        <input type="checkbox" class="form-check-input" id="validationFormCheck1" style="padding-top: 15px" required>
         <label class="form-check-label" for="validationFormCheck1">Eres humano?</label>
-        <div class="invalid-feedback">Example invalid feedback text</div>
+        <div class="invalid-feedback">Click Aqui!</div>
     </div>
 
     <div class="mb-3">
-        <button class="btn btn-primary" type="submit" disabled>Crear Post</button>
+        <button class="btn btn-primary" type="submit" >Crear Post</button>
     </div>
 </form>
