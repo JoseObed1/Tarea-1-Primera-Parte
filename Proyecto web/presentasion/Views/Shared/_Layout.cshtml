@@ -13,11 +13,12 @@
     <div class="navbar navbar-expand-lg navbar-toggleable-lg navbar-light bg-primary border-bottom box-shadow lg-3">
         <div class="container">
             <div class="navbar-header">
+                <img  src="~/Content/img/busqueda.png" alt="logo" style="height: 50px; width: 50px "/>
                 @Html.ActionLink("ServiTra", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-link text-light" style="color:white !important;">
+                <ul class="navbar-nav flex-grow-1;" style="float:right !important">
+                    <li class="nav-link text-light" style="!important;">
                         @Html.ActionLink("Privacy", "Privacy", "Home", new { style = "text-decoration:none; color:white" })
                     </li>
                     <li class="nav-link text-light">

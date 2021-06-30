@@ -216,7 +216,15 @@
     <Content Include="Content\css\sobren.css" />
     <Content Include="Content\css\styleLR.css" />
     <Content Include="Content\css\styles.css" />
+    <Content Include="Content\img\agregar-archivo.png" />
+    <Content Include="Content\img\boy.jpg" />
+    <Content Include="Content\img\busqueda.png" />
+    <Content Include="Content\img\cerrajero.png" />
+    <Content Include="Content\img\enter.png" />
     <Content Include="Content\img\fondo 2.jpg" />
+    <Content Include="Content\img\girl.jpg" />
+    <Content Include="Content\img\notas.png" />
+    <Content Include="Content\img\registrarse.png" />
     <Content Include="Content\js\scriptLR.js" />
     <Content Include="Content\js\scripts.js" />
     <Content Include="Content\js\site.js" />

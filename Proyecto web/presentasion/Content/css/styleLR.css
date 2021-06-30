@@ -211,7 +211,7 @@ input {
     top: 40%;
     left: 30px;
     width: calc(50% - 30px);
-    min-height: 510px;
+    min-height: 550px;
     background-color: #0d6efd;
     border-radius: 3px;
     box-shadow: 2px 0 15px rgba(0, 0, 0, 0.25);

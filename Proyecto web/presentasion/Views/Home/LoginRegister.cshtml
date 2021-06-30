@@ -13,14 +13,21 @@
     <div class="user_options-container">
         <div class="user_options-text">
             <div class="user_options-unregistered">
+                 <center>
+                    <img  src="~/Content/img/notas.png" alt="logo" style="height: 70px; width: 70px "/>
+                </center>
                 <h2 class="user_unregistered-title">No tienes cuenta?</h2>
                 <p class="user_unregistered-text">Registrate a ServiTra para que puedas publicar ofertas de trabajo!</p>
                 <button class="user_unregistered-signup" id="signup-button">Registrate</button>
             </div>
 
             <div class="user_options-registered">
+                <center>
+                    <img  src="~/Content/img/cerrajero.png" alt="logo" style="height: 70px; width: 70px "/>
+                </center>
                 <h2 class="user_registered-title">Ya tienes una cuenta en ServiTra?</h2>
                 <p class="user_registered-text">Accede a tu cuenta.</p>
+
                 <button class="user_registered-login" id="login-button">Inicia Sesion</button>
             </div>
         </div>
@@ -29,8 +36,8 @@
             <div class="user_forms-login">
                 @using (Html.BeginForm("LoginRegister", "Home"))
                 {
-                    @Html.AntiForgeryToken()
-                    <h2 class="forms_title">Inicia Sesion</h2>
+                    @Html.AntiForgeryToken()                                  
+                    <h2 class="forms_title" style="padding-top: 30px">Inicia Sesion</h2>
                     <form class="forms_form">
                         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
                         <fieldset class="forms_fieldset">
@@ -39,6 +46,7 @@
                                 @Html.ValidationMessageFor(model => model.Correo, "", new { @class = "text-danger" })
                             </div>
                             <div class="forms_field">
+
                                 @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @type = "password", @class = "form-control forms_field-input", @placeholder = "Password" } })
                                 @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
                             </div>
@@ -59,7 +67,7 @@
             <div class="user_forms-signup">
                 @using (Html.BeginForm("LoginRegister", "Home"))
                 {
-                    <h2 class="forms_title">Registrate</h2>
+                    <h2 class="forms_title" style="padding-top: 30px">Registrate</h2>
                     <form class="forms_form">
                         <fieldset class="forms_fieldset">
                             
@@ -82,6 +90,7 @@
 
                         </fieldset>
                         <div class="forms_buttons">
+
                             <input type="submit" value="Registrate" class="forms_buttons-action">
                         </div>
                         <div class="form-group">
