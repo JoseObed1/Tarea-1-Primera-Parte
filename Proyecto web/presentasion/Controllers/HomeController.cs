@@ -11,7 +11,7 @@ namespace WebApplication3.Controllers
     public class HomeController : Controller
     {
         DBTest testeo = new DBTest();
-        Online1 db = new Online1();
+        EntitiesOffLine db = new EntitiesOffLine();
 
         public ActionResult Index()
         {

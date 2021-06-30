@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="Online1-Web.config Connection String" description="Online1 Cadena de conexión que usa la aplicación en web.config para obtener acceso a la base de datos." defaultValue="metadata=res://*/App_Data.Tarea1Entities.csdl|res://*/App_Data.Tarea1Entities.ssdl|res://*/App_Data.Tarea1Entities.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=SQL5053.site4now.net;initial catalog=db_a7664c_tarea1;persist security info=True;user id=db_a7664c_tarea1_admin;password=delunoal8;multipleactiveresultsets=True;application name=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Jose\\source\\repos\\JoseObed1\\Tarea-1--parte-1-primera-parte\\Proyecto\ web\\presentasion\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Online1']/@connectionString" />
+  </parameter>
+</parameters>

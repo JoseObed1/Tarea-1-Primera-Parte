@@ -10,7 +10,7 @@ namespace WebApplication3
 {
     public class DBTest
     {
-        Online1 db = new Online1();
+        EntitiesOffLine db = new EntitiesOffLine();
 
         public void VisualizarDatos(string id)
         {
