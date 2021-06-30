@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication3.App_Data
+namespace WebApplication3
 {
     using System;
     using System.Collections.Generic;
-
+    
     public partial class Foro
     {
         public string Nombre { get; set; }

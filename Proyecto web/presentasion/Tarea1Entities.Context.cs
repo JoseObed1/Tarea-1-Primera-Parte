@@ -7,16 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApplication3.App_Data
+namespace WebApplication3
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Online : DbContext
+    public partial class Online1 : DbContext
     {
-        public Online()
-            : base("name=Online")
+        public Online1()
+            : base("name=Online1")
         {
         }
     
