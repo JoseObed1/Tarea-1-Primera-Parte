@@ -319,6 +319,7 @@
     <Content Include="Views\Home\Privacy.cshtml" />
     <Content Include="Views\Home\Sobrenosotros.cshtml" />
     <Content Include="Views\Home\Contactos.cshtml" />
+    <Content Include="Views\Home\Registro.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />

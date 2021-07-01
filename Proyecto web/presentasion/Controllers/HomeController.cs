@@ -70,13 +70,13 @@ namespace WebApplication3.Controllers
         public ActionResult Registro(Cuentas dato)
         {
             if(db.Cuentas.Any(x=> x.Correo == dato.Correo))
-            {
+            { //Si existe en la db, dale patra
                 ViewBag.Notification = "Ya existe esta cuenta";
-                return View();
+                return RedirectToAction("LoginRegister", "Home");
             }
             else
-            {                
-                //testeo.NuevoUsuario(dato); esperar a Obed para que funcione esta parte
+            { //Si el usuario no existe en la DB, lo creamos xD                
+                testeo.NuevoUsuario(dato);
                 return RedirectToAction("Index", "Home");
             }
 
@@ -86,9 +86,6 @@ namespace WebApplication3.Controllers
         public ActionResult InicioSesion(Cuentas datoss)
         {
             var existe = db.Cuentas.Where(y => y.Correo.Equals(datoss.Correo) && y.Password.Equals(datoss.Password)).FirstOrDefault();
-
-            string TempoMail = datoss.Correo;
-            string TempoPass = datoss.Password;
 
             if (existe != null)
             {

@@ -18,16 +18,16 @@ namespace WebApplication3
             System.Diagnostics.Debug.WriteLine(cuentas.Correo.ToString());
         }
         
-        public void NuevoUsuario(string user, string contra, string compania, string correo)
+        public void NuevoUsuario(Cuentas datos)
         {
-            Cuentas temporal = new Cuentas();
+            /*Cuentas temporal = new Cuentas();
             temporal.Username = user;
             temporal.Password = contra;
             temporal.Compania = compania;
             temporal.Correo = correo;
-            temporal.Foto = null;
+            temporal.Foto = null;*/
 
-            db.Cuentas.Add(temporal);
+            db.Cuentas.Add(datos);
             db.SaveChanges();
         }
 
