@@ -1,0 +1,79 @@
+﻿@model IEnumerable<WebApplication3.App_Data.Foro>
+
+@{
+    ViewBag.Title = "ForosPublicados";
+}
+
+<h2>ForosPublicados</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Autor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Logo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ID_Categoria)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Correo_Compania)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ubicacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Url)
+        </th>
+        <th></th>
+    </tr>
+
+    @if (Model != null)
+    {
+        foreach (var item in Model)
+        {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Nombre)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Descripcion)
+                            </td>
+                            <td>
+                                    @Html.DisplayFor(modelItem => item.Autor)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Logo)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.ID_Categoria)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Correo_Compania)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Ubicacion)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Url)
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Edit", "Edit", new { id = item.ID_Foro }) |
+                                    @Html.ActionLink("Details", "Details", new { id = item.ID_Foro }) |
+                                    @Html.ActionLink("Delete", "Delete", new { id = item.ID_Foro })
+                                </td>
+                        </tr>
+        }
+     }
+
+</table>

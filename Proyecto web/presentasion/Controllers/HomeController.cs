@@ -44,6 +44,11 @@ namespace WebApplication3.Controllers
             }
         }
 
+        public ActionResult ForosPublicados()
+        {
+            return View(db.Foro.ToList());
+        }
+
         public ActionResult LoginRegister(string error)
         {
             return View();
