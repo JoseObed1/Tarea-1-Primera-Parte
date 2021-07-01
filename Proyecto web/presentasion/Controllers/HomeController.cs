@@ -49,7 +49,9 @@ namespace WebApplication3.Controllers
 
         public ActionResult ForosPublicados()
         {
-            return View(db.Foro.ToList());
+            var ress = Request.Form["ForoCat"];
+
+            return View(testeo.FiltrarForo(ress));
         }
 
         public ActionResult VerForo(int? id)

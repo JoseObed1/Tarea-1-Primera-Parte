@@ -18,7 +18,7 @@ namespace WebApplication3
             Cuentas cuentas = db.Cuentas.Find(id);
             System.Diagnostics.Debug.WriteLine(cuentas.Correo.ToString());
         }
-        
+
         public void NuevoUsuario(Cuentas datos)
         {
             db.Cuentas.Add(datos);
@@ -56,7 +56,7 @@ namespace WebApplication3
             }
         }*/
         #endregion
-    
+
 
         #region Foros
         public void NuevoForo(Foro datos)
@@ -64,7 +64,18 @@ namespace WebApplication3
             db.Foro.Add(datos);
             db.SaveChanges();
         }
+
+        public List<Foro> FiltrarForo(string Palabra)
+        {
+            var filtrado = from s in db.Foro
+                           select s;
+            if (!String.IsNullOrEmpty(Palabra))
+            {
+                filtrado = filtrado.Where(s => s.ID_Categoria.Contains(Palabra));
+                return filtrado.ToList();
+            }
+            return filtrado.ToList();
+        }
         #endregion
     }
-
 }
