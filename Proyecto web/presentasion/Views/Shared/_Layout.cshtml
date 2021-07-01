@@ -20,15 +20,16 @@
             </div>
             <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                 <ul class="navbar-nav flex-grow-1;" style="float:right !important">
+                    <li class="nav-link text-light">
+                        @Html.ActionLink("Inicio", "Index", "Home", new { style = "text-decoration:none; color:white" })
+                    </li>
                     <li class="nav-link text-light" style="!important;">
                         @Html.ActionLink("Privacy", "Privacy", "Home", new { style = "text-decoration:none; color:white" })
                     </li>
                     <li class="nav-link text-light">
                         @Html.ActionLink("Sobre Nosotros", "Sobrenosotros", "Home", new { style = "text-decoration:none; color:white" })
                     </li>
-                    <li class="nav-link text-light">
-                        @Html.ActionLink("Contactos", "Contactos", "Home", new { style = "text-decoration:none; color:white" })
-                    </li>
+
                 </ul>
             </div>
         </div>

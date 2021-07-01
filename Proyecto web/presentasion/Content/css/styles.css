@@ -319,10 +319,19 @@ button,
 select,
 optgroup,
 textarea {
-  margin: 0;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+/*    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;*/
+    margin: 8px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: blue;
+    border: 2px solid;
+    border-radius: 10px;
+    height: 40px;
+    border-color: gold;
 }
 
 button,
@@ -4271,7 +4280,7 @@ textarea.form-control-lg {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 3px solid #0d6efd;
   border-radius: 0.25rem;
 }
 .card > hr {
@@ -4334,7 +4343,7 @@ textarea.form-control-lg {
 
 .card-footer {
   padding: 0.5rem 1rem;
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: skyblue;
   border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
 .card-footer:last-child {
