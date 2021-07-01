@@ -5,6 +5,8 @@
 }
 @model WebApplication3.App_Data.Foro
 
+
+
     <link href="~/css/styles.css" rel="stylesheet" />
 
     <form class="was-validated">
@@ -107,13 +109,10 @@
             <div class="invalid-feedback">Click Aqui!</div>
         </div>
 
-
-
-        @using (Html.BeginForm("GuardarForo", "Home"))
+        @using (Html.BeginForm("GuardarPost", "Home"))
         {
             <div class="mb-3">
                 <button class="btn btn-primary" type="submit"><img src="~/Content/img/publicacion-de-invitado (1).png" style="height:30px ; " width: 30px" /> Crear Post</button>
             </div>
         }
     </form>
-@*}*@

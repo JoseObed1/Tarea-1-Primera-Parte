@@ -9,7 +9,32 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+
+
+
+<div class="row gx-4 gx-lg-5">
+
+    @if (Model != null)
+    {
+        foreach (var item in Model)
+        {
+
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h2 class="card-title">@Html.DisplayFor(modelItem => item.Nombre)</h2>
+                        <p class="card-text">@Html.DisplayFor(modelItem => item.Descripcion)</p>
+                    </div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="@Url.Action("VerForo", "Home", new { id = item.ID_Foro })">Mas Info</a></div>
+                </div>
+            </div>
+        }
+    }
+</div>
+
+@*
+
+    <table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Nombre)
@@ -38,42 +63,38 @@
         <th></th>
     </tr>
 
-    @if (Model != null)
-    {
-        foreach (var item in Model)
-        {
-                        <tr>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.Nombre)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.Descripcion)
-                            </td>
-                            <td>
-                                    @Html.DisplayFor(modelItem => item.Autor)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Logo)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.ID_Categoria)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Correo_Compania)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Ubicacion)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Url)
-                                </td>
-                                <td>
-                                    @Html.ActionLink("Edit", "Edit", new { id = item.ID_Foro }) |
-                                    @Html.ActionLink("Details", "Details", new { id = item.ID_Foro }) |
-                                    @Html.ActionLink("Delete", "Delete", new { id = item.ID_Foro })
-                                </td>
-                        </tr>
-        }
-     }
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nombre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Descripcion)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Autor)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Logo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ID_Categoria)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Correo_Compania)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Ubicacion)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Url)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.ID_Foro }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.ID_Foro }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.ID_Foro })
+                    </td>
+                </tr>
+    </table>
+*@
 
-</table>
+

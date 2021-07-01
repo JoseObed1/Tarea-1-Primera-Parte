@@ -233,7 +233,6 @@ C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\presentasion\
 C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\presentasion\obj\Release\Presentacion.csproj.CopyComplete
 C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\presentasion\obj\Release\WebApplication3.dll
 C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\presentasion\obj\Release\WebApplication3.pdb
-C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\presentasion\obj\Release\Presentacion.csproj.AssemblyReference.cache
 C:\Users\utente\Desktop\Tarea-1-Primera-Parte\Proyecto web\presentasion\bin\WebApplication3.dll.config
 C:\Users\utente\Desktop\Tarea-1-Primera-Parte\Proyecto web\presentasion\bin\WebApplication3.dll
 C:\Users\utente\Desktop\Tarea-1-Primera-Parte\Proyecto web\presentasion\bin\WebApplication3.pdb
@@ -352,3 +351,4 @@ C:\Users\utente\Desktop\Tarea-1-Primera-Parte\Proyecto web\presentasion\obj\Rele
 C:\Users\utente\Desktop\Tarea-1-Primera-Parte\Proyecto web\presentasion\obj\Release\Presentacion.csproj.CopyComplete
 C:\Users\utente\Desktop\Tarea-1-Primera-Parte\Proyecto web\presentasion\obj\Release\WebApplication3.dll
 C:\Users\utente\Desktop\Tarea-1-Primera-Parte\Proyecto web\presentasion\obj\Release\WebApplication3.pdb
+C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\presentasion\obj\Release\Presentacion.csproj.AssemblyReference.cache

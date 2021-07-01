@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using WebApplication3.App_Data;
+using System.Net;
 
 namespace WebApplication3.Controllers
 {
@@ -47,6 +48,20 @@ namespace WebApplication3.Controllers
         public ActionResult ForosPublicados()
         {
             return View(db.Foro.ToList());
+        }
+
+        public ActionResult VerForo(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Foro foros = db.Foro.Find(id);
+            if (foros == null)
+            {
+                return HttpNotFound();
+            }
+            return View(foros);
         }
 
         public ActionResult LoginRegister(string error)
