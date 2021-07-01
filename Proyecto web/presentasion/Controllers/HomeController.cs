@@ -16,7 +16,6 @@ namespace WebApplication3.Controllers
 
         public ActionResult Index()
         {
-            //testeo.VisualizarDatos("1");
             return View(db.Foro.ToList());
         }
 
@@ -33,13 +32,16 @@ namespace WebApplication3.Controllers
         [HttpPost]
         public ActionResult GuardarPost(Foro datos)
         {
+            var res = Request.Form["selec"];
+
             if (db.Foro.Any(x => x.Nombre == datos.Nombre))
             { //Si existe en la db, dale patra
                 ViewBag.Notification = "Ya existe ese foro";
                 return RedirectToAction("nuevoPost", "Home");
             }
             else
-            { //Si el foro no existe en la DB, lo creamos xD                
+            { //Si el foro no existe en la DB, lo creamos xD
+                datos.ID_Categoria = res.ToString();
                 testeo.NuevoForo(datos);
                 return RedirectToAction("Index", "Home");
             }

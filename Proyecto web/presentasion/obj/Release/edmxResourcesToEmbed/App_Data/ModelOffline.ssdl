@@ -24,13 +24,13 @@
     </Key>
     <Property Name="ID_Foro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Nombre" Type="nvarchar" MaxLength="50" />
-    <Property Name="Descripcion" Type="nvarchar" MaxLength="50" />
-    <Property Name="Autor" Type="nvarchar" MaxLength="50" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="255" />
+    <Property Name="Autor" Type="nvarchar" MaxLength="510" />
     <Property Name="Logo" Type="varbinary(max)" />
     <Property Name="ID_Categoria" Type="nvarchar" MaxLength="50" />
-    <Property Name="Correo_Compania" Type="nvarchar" MaxLength="50" />
-    <Property Name="Ubicacion" Type="nvarchar" MaxLength="50" />
-    <Property Name="Url" Type="nvarchar" MaxLength="50" />
+    <Property Name="Correo_Compania" Type="nvarchar" MaxLength="150" />
+    <Property Name="Ubicacion" Type="nvarchar" MaxLength="255" />
+    <Property Name="Url" Type="nvarchar" MaxLength="510" />
   </EntityType>
   <EntityContainer Name="ModelOfflineStoreContainer">
     <EntitySet Name="Categorias" EntityType="Self.Categorias" Schema="dbo" store:Type="Tables" />
