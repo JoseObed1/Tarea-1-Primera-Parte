@@ -1,82 +1,84 @@
 ﻿@model WebApplication3.App_Data.Foro
 
 @{
-    ViewBag.Title = "VerForo";
+    ViewBag.Title = "Info Vacante";
 }
-
-<h2>VerForo</h2>
+<center style="padding-top: 10px ; color: #0d6efd">
+    <img src="~/Content/img/bolso.png" />
+    <h2>Detalles de la Vacante</h2>
+</center>
 
 <div>
-    <h4>Foro</h4>
+    <h4></h4>
     <hr />
     <dl class="dl-horizontal">
-        <dt>
+        <dt style="font-size: 22px ; color: #0d6efd">
             @Html.DisplayNameFor(model => model.Nombre)
         </dt>
 
-        <dd>
+        <dd style="font-size: 20px; color: black">
             @Html.DisplayFor(model => model.Nombre)
         </dd>
 
-        <dt>
+        <dt style="font-size: 22px ; color: #0d6efd">
             @Html.DisplayNameFor(model => model.Descripcion)
         </dt>
 
-        <dd>
+        <dd style="font-size: 20px; color: black">
             @Html.DisplayFor(model => model.Descripcion)
         </dd>
 
-        <dt>
+        <dt style="font-size: 22px ; color: #0d6efd">
             @Html.DisplayNameFor(model => model.Autor)
         </dt>
 
-        <dd>
+        <dd style="font-size: 20px; color: black">
             @Html.DisplayFor(model => model.Autor)
         </dd>
 
-        <dt>
+        <dt style="font-size: 22px ; color: #0d6efd">
             @Html.DisplayNameFor(model => model.Logo)
         </dt>
 
-        <dd>
+        <dd style="font-size: 20px; color: black">
             @Html.DisplayFor(model => model.Logo)
         </dd>
 
-        <dt>
+        <dt style="font-size: 22px ; color: #0d6efd">
             @Html.DisplayNameFor(model => model.ID_Categoria)
         </dt>
 
-        <dd>
+        <dd style="font-size: 20px; color: black">
             @Html.DisplayFor(model => model.ID_Categoria)
         </dd>
 
-        <dt>
+        <dt style="font-size: 22px ; color: #0d6efd">
             @Html.DisplayNameFor(model => model.Correo_Compania)
         </dt>
 
-        <dd>
+        <dd style="font-size: 20px; color: black">
             @Html.DisplayFor(model => model.Correo_Compania)
         </dd>
 
-        <dt>
+        <dt style="font-size: 22px ; color: #0d6efd">
             @Html.DisplayNameFor(model => model.Ubicacion)
         </dt>
 
-        <dd>
+        <dd style="font-size: 20px; color: black">
             @Html.DisplayFor(model => model.Ubicacion)
         </dd>
 
-        <dt>
+        <dt style="font-size: 22px ; color: #0d6efd">
             @Html.DisplayNameFor(model => model.Url)
         </dt>
 
-        <dd>
+        <dd style="font-size: 20px; color: black">
             @Html.DisplayFor(model => model.Url)
         </dd>
 
     </dl>
 </div>
-<p>
+@*<p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.ID_Foro }) |
     @Html.ActionLink("Back to List", "Index")
-</p>
+</p>*@

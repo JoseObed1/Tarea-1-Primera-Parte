@@ -3,9 +3,13 @@
 @{
     ViewBag.Title = "ForosPublicados";
 }
-<center><h2>Vacantes Disponibles</h2></center>
+<center style="padding-top: 20px">
+    <h2 style="color: #0d6efd">SERVICIO DE VACANTES DE TRABAJO</h2>
+    <img  src="~/Content/img/oportunidades.png"/>
+    <h2 style="padding-bottom: 10px">Vacantes Disponibles</h2>
+</center>
 
-<label for="cars">Filtrar por:</label>
+<label for="cars" style="font-size: 28px ; color: #0d6efd"><img src="~/Content/img/opciones.png" style="height:25px " width: 25px;"/> Filtrar por: </label>
 
 <select name="cars" id="cars" class="">
     <option value="1">Software</option>
@@ -33,7 +37,7 @@
                         <h2 class="card-title">@Html.DisplayFor(modelItem => item.Nombre)</h2>
                         <p class="card-text">@Html.DisplayFor(modelItem => item.Descripcion)</p>
                     </div>
-                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="@Url.Action("VerForo", "Home", new { id = item.ID_Foro })">Mas Info</a></div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="@Url.Action("VerForo", "Home", new { id = item.ID_Foro })"><img src="~/Content/img/agregar.png" style="height:25px ; " width: 25px" />Mas Info</a></div>
                 </div>
             </div>
         }
