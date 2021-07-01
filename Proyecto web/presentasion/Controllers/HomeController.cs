@@ -29,42 +29,25 @@ namespace WebApplication3.Controllers
             return View();
         }
 
+        [HttpPost]
+        public ActionResult GuardarPost(Foro datos)
+        {
+            if (db.Foro.Any(x => x.Nombre == datos.Nombre))
+            { //Si existe en la db, dale patra
+                ViewBag.Notification = "Ya existe ese foro";
+                return RedirectToAction("nuevoPost", "Home");
+            }
+            else
+            { //Si el foro no existe en la DB, lo creamos xD                
+                testeo.NuevoForo(datos);
+                return RedirectToAction("Index", "Home");
+            }
+        }
+
         public ActionResult LoginRegister(string error)
         {
             return View();
         }        
-        
-        //[HttpPost]
-        //public ActionResult LoginRegister(Cuentas datos)
-        //{
-        //    var existe = db.Cuentas.Where(y => y.Correo.Equals(datos.Correo) && y.Password.Equals(datos.Password)).FirstOrDefault();
-
-        //    string TempoMail = datos.Correo;
-        //    string TempoPass = datos.Password;
-
-        //    if (existe != null)
-        //    {
-        //        return RedirectToAction("Index", "Home");
-        //    }
-
-        //    else if (datos.Correo == "a" && datos.Password == "a")
-        //    {
-        //        return RedirectToAction("Index", "Home");
-        //    }
-
-        //    else if (testeo.ValidarLogin(datos.Correo, datos.Correo) == true)
-        //    {
-        //        RedirectToAction("Index", "Home");
-        //    }
-
-        //    else
-        //    {
-        //        return RedirectToAction("sobrenosotros", "Home");
-        //    }
-
-        //    return View();
-        //}
-
 
         [HttpPost]
         public ActionResult Registro(Cuentas dato)
@@ -79,7 +62,6 @@ namespace WebApplication3.Controllers
                 testeo.NuevoUsuario(dato);
                 return RedirectToAction("Index", "Home");
             }
-
         }
 
         [HttpPost]
@@ -94,7 +76,7 @@ namespace WebApplication3.Controllers
             else
             {
                 ViewBag.Notification = "Email o contraseña incorrecta";
-                return View();
+                return RedirectToAction("LoginRegister", "Home");
             }
 
         }

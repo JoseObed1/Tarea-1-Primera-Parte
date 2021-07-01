@@ -229,8 +229,8 @@ C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\presentasion\
 C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\presentasion\bin\es\System.Web.WebPages.resources.dll
 C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\presentasion\bin\es\System.Web.WebPages.Deployment.resources.dll
 C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\presentasion\bin\es\System.Web.WebPages.Razor.resources.dll
-C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\presentasion\obj\Release\Presentacion.csproj.AssemblyReference.cache
 C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\presentasion\obj\Release\Presentacion.csproj.CoreCompileInputs.cache
 C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\presentasion\obj\Release\Presentacion.csproj.CopyComplete
 C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\presentasion\obj\Release\WebApplication3.dll
 C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\presentasion\obj\Release\WebApplication3.pdb
+C:\Users\ronal\Desktop\CodePart\Tarea-1-Primera-Parte\Proyecto web\presentasion\obj\Release\Presentacion.csproj.AssemblyReference.cache

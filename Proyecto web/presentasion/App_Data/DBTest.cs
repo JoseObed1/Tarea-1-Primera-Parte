@@ -12,6 +12,7 @@ namespace WebApplication3
     {
         db_a7664c_tarea1Entities db = new db_a7664c_tarea1Entities();
 
+        #region Cuentas
         public void VisualizarDatos(string id)
         {
             Cuentas cuentas = db.Cuentas.Find(id);
@@ -20,13 +21,6 @@ namespace WebApplication3
         
         public void NuevoUsuario(Cuentas datos)
         {
-            /*Cuentas temporal = new Cuentas();
-            temporal.Username = user;
-            temporal.Password = contra;
-            temporal.Compania = compania;
-            temporal.Correo = correo;
-            temporal.Foto = null;*/
-
             db.Cuentas.Add(datos);
             db.SaveChanges();
         }
@@ -44,6 +38,7 @@ namespace WebApplication3
             db.SaveChanges();
         }
 
+        /*
         public bool ValidarLogin(string correo, string contra)
         {
             var existe = db.Cuentas.FirstOrDefault(tempolog => tempolog.Correo == correo && tempolog.Password == contra);
@@ -59,7 +54,17 @@ namespace WebApplication3
                 System.Diagnostics.Debug.WriteLine("Sad Programmer Noises");
                 return false;
             }
-        }
+        }*/
+        #endregion
+    
 
+        #region Foros
+        public void NuevoForo(Foro datos)
+        {
+            db.Foro.Add(datos);
+            db.SaveChanges();
+        }
+        #endregion
     }
+
 }

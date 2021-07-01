@@ -320,6 +320,7 @@
     <Content Include="Views\Home\Sobrenosotros.cshtml" />
     <Content Include="Views\Home\Contactos.cshtml" />
     <Content Include="Views\Home\Registro.cshtml" />
+    <Content Include="Views\Home\GuardarPost.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
