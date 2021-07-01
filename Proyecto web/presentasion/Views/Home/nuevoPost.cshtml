@@ -9,6 +9,10 @@
 
     <form class="was-validated">
 
+        <center>
+            <img src="~/Content/img/blog.png" alt="logo" style="height: 120px; width: 100px ; padding-top: 20px" />
+        </center>
+
         <div class="mb-3">
             <label for="validationTextarea" class="form-label" style="padding-top: 30px">Nombre de la Vacante</label>
             <section>
@@ -80,12 +84,22 @@
             </div>
         </div>
 
+        <div class="mb-3">
+            <label for="validationTextarea" class="form-label" style="padding-top: 15px">Autor</label>
+            <section>
+                @Html.EditorFor(model => model.Autor, new { htmlAttributes = new { @class = "form-control forms_field-input", @placeholder = "Autor de quien publica la vacante" } })
+                @Html.ValidationMessageFor(model => model.Autor, "", new { @class = "text-danger" })
+            </section>
+            <div class="invalid-feedback">
+            </div>
+        </div>
 
+        <div class="mb-3">
+            <label for="validationTextarea" class="form-label" style="padding-top: 15px">Logo de la Compañia</label>
 
-        @*<div class="mb-3">
-            <input type="file" class="form-control" aria-label="file example" required>
-            <div class="invalid-feedback">Sube tu Curriculum Vitae aqui</div>
-        </div>*@
+            <input type="file" class="form-control" aria-label="file example">
+            @*<div class="invalid-feedback">Logo </div>*@
+        </div>
 
         <div class="form-check mb-3">
             <input type="checkbox" class="form-check-input" id="validationFormCheck1" style="padding-top: 15px" required>
@@ -93,11 +107,13 @@
             <div class="invalid-feedback">Click Aqui!</div>
         </div>
 
+
+
         @using (Html.BeginForm("GuardarForo", "Home"))
         {
             <div class="mb-3">
-                <button class="btn btn-primary" type="submit">Crear Post</button>
+                <button class="btn btn-primary" type="submit"><img src="~/Content/img/publicacion-de-invitado (1).png" style="height:30px ; " width: 30px" /> Crear Post</button>
             </div>
         }
-        </form>
-}
+    </form>
+@*}*@
