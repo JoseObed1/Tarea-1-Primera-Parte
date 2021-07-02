@@ -12,7 +12,7 @@
     <div class="mb-3">
         <label for="validationTextarea" class="form-label" style="padding-top: 30px">Nombre de la Vacante</label>
         <section>
-            @Html.EditorFor(model => model.Nombre, new { htmlAttributes = new { @class = "form-control forms_field-input", @placeholder = "Nombre Vacante" } })
+            @Html.EditorFor(model => model.Nombre, new { htmlAttributes = new { @class = "form-control forms_field-input", @placeholder = "Nombre Vacante", required = "required" } })
             @Html.ValidationMessageFor(model => model.Nombre, "", new { @class = "text-danger" })
         </section>
         <div class="invalid-feedback">
@@ -21,10 +21,7 @@
 
     <div class="mb-3">
         <label for="validationTextarea" class="form-label" style="padding-top: 15px">Requisitos para cumplir con el puesto</label><br />
-        @Html.TextAreaFor(model => model.Descripcion, new { @class = "form-control forms_field-input", @placeholder = "Informacion necesaria..." })
-        @*
-            <textarea class="form-control is-invalid" id="validationTextarea" required @Html.EditorFor(model => model.Descripcion, new { htmlAttributes = new { @class = "form-control forms_field-input", @placeholder = "Informacion necesaria..." } })</textarea>
-        *@
+        @Html.TextAreaFor(model => model.Descripcion, new { @class = "form-control forms_field-input", @placeholder = "Informacion necesaria...", required = "required" })
         @Html.ValidationMessageFor(model => model.Descripcion, "", new { @class = "text-danger" })
         <div class="invalid-feedback">
         </div>
@@ -60,7 +57,7 @@
     <div class="mb-3">
         <label for="validationTextarea" class="form-label" style="padding-top: 15px">Correo de la Empresa</label>
         <section>
-            @Html.EditorFor(model => model.Correo_Compania, new { htmlAttributes = new { @class = "form-control forms_field-input", @placeholder = "Detalle su correo aqui..." } })
+            @Html.EditorFor(model => model.Correo_Compania, new { htmlAttributes = new { @class = "form-control forms_field-input", @placeholder = "Detalle su correo aqui..." }, required = "required" })
             @Html.ValidationMessageFor(model => model.Correo_Compania, "", new { @class = "text-danger" })
         </section>
         <div class="invalid-feedback">
@@ -69,10 +66,7 @@
 
     <div class="mb-3">
         <label for="validationTextarea" class="form-label" style="padding-top: 15px">Ubicacion de la Compañia</label>
-        @Html.TextAreaFor(model => model.Ubicacion, new { @class = "form-control is-invalid" })
-        @*
-            <textarea class="form-control is-invalid" id="validationTextarea" required @Html.EditorFor(model => model.Ubicacion, new { htmlAttributes = new { @class = "form-control forms_field-input", @placeholder = "Ubicacion exacta..." } })</textarea>
-        *@
+        @Html.TextAreaFor(model => model.Ubicacion, new { @class = "form-control is-invalid", @placeholder = "Detalle la ubicación exacta...", required = "required" })
         @Html.ValidationMessageFor(model => model.Ubicacion, "", new { @class = "text-danger" })
         <div class="invalid-feedback">
         </div>
@@ -81,7 +75,7 @@
     <div class="mb-3">
         <label for="validationTextarea" class="form-label" style="padding-top: 15px">URL</label>
         <section>
-            @Html.EditorFor(model => model.Url, new { htmlAttributes = new { @class = "form-control forms_field-input", @placeholder = "Pegue el URL de la pagina de la Compañia aqui..." } })
+            @Html.EditorFor(model => model.Url, new { htmlAttributes = new { @class = "form-control forms_field-input", @placeholder = "Pegue el URL de la pagina de la Compañia aqui...", required = "required" } })
             @Html.ValidationMessageFor(model => model.Url, "", new { @class = "text-danger" })
         </section>
         <div class="invalid-feedback">
@@ -91,7 +85,7 @@
     <div class="mb-3">
         <label for="validationTextarea" class="form-label" style="padding-top: 15px">Autor</label>
         <section>
-            @Html.EditorFor(model => model.Autor, new { htmlAttributes = new { @class = "form-control forms_field-input", @placeholder = "Autor de quien publica la vacante" } })
+            @Html.EditorFor(model => model.Autor, new { htmlAttributes = new { @class = "form-control forms_field-input", @placeholder = "Autor de quien publica la vacante" }, required = "required" })
             @Html.ValidationMessageFor(model => model.Autor, "", new { @class = "text-danger" })
         </section>
         <div class="invalid-feedback">

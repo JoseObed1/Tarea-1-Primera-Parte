@@ -9,7 +9,7 @@
 </center>
 
 <div>
-    <h4></h4>
+    <button style="text-decoration:none">@Html.ActionLink("Regresar", null, null, null, new { href = Request.UrlReferrer })</button>
     <hr />
     <dl class="dl-horizontal">
         <dt style="font-size: 22px ; color: #0d6efd">
@@ -45,18 +45,6 @@
         </dd>
 
         <dt style="font-size: 22px ; color: #0d6efd">
-            @Html.DisplayNameFor(model => model.ID_Categoria)
-        </dt>
-
-        <dt style="font-size: 22px ; color: #0d6efd">
-            @Html.DisplayNameFor(model => model.Correo_Compania)
-        </dt>
-
-        <dd style="font-size: 20px; color: black">
-            @Html.DisplayFor(model => model.Correo_Compania)
-        </dd>
-
-        <dt style="font-size: 22px ; color: #0d6efd">
             @Html.DisplayNameFor(model => model.Ubicacion)
         </dt>
 
@@ -69,9 +57,10 @@
         </dt>
 
         <dd style="font-size: 20px; color: black">
-            @Html.DisplayFor(model => model.Url)
+            <a href="@Html.DisplayFor(model => model.Url)">@Html.DisplayFor(model => model.Url)</a>
         </dd>
-
+        
+        <button><a href="mailto:@Html.DisplayFor(model => model.Correo_Compania)" style="text-decoration: none">Enviar Curriculum</a></button>
     </dl>
 </div>
 @*<p>

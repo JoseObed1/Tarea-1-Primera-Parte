@@ -48,8 +48,11 @@
                                 <h2 class="card-title">@Html.DisplayFor(modelItem => item.Nombre)</h2>
                                 <p class="card-text">@Html.DisplayFor(modelItem => item.Descripcion)</p>
                             </div>
-                            <div class="card-footer"><a class="btn btn-primary btn-sm" href="@Url.Action("VerForo", "Home", new { id = item.ID_Foro })">
-                                <img src="~/Content/img/agregar.png" style="height:30px ; " width: 30px" /> Mas Info</a></div>
+                            <div class="card-footer">
+                                <a class="btn btn-primary btn-sm" href="@Url.Action("VerForo", "Home", new { id = item.ID_Foro })">
+                                    <img src="~/Content/img/agregar.png" style="height:30px ; " width: 30px" /> Mas Info
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -61,6 +64,8 @@
                     }
                 }
             }
+
+            <a class="btn btn-primary" style="color:white" href="home/ForosPublicados"><img src="~/Content/img/agregar.png" style="height:30px ; " width: 30px" /> Ver mas posts</a>
         }
     </div>
 </div>

@@ -14,6 +14,7 @@ namespace WebApplication3.Controllers
     {
         DBTest testeo = new DBTest();
         db_a7664c_tarea1Entities db = new db_a7664c_tarea1Entities();
+        string LoginError;
 
         public ActionResult Index()
         {
@@ -71,19 +72,22 @@ namespace WebApplication3.Controllers
             return View(foros);
         }
 
-        public ActionResult LoginRegister(string error)
+        public ActionResult LoginRegister()
         {
+            ViewBag.Notification = TempData["error2"];
+            ViewBag.ErrorLogin = TempData["error"];
             return View();
-        }        
+        }
 
         [HttpPost]
         public ActionResult Registro(Cuentas dato)
         {
             if(db.Cuentas.Any(x=> x.Correo == dato.Correo))
             { //Si existe en la db, dale patra
-                ViewBag.Notification = "Ya existe esta cuenta";
-                return RedirectToAction("LoginRegister", "Home");
+                TempData["error2"] = "Ya existe esta cuenta";
+                return RedirectToAction("LoginRegister", "Home", TempData["error2"]);
             }
+            
             else
             { //Si el usuario no existe en la DB, lo creamos xD                
                 testeo.NuevoUsuario(dato);
@@ -107,8 +111,9 @@ namespace WebApplication3.Controllers
             }
             else
             {
-                ViewBag.Notification = "Email o contraseña incorrecta";
-                return RedirectToAction("LoginRegister", "Home");
+                LoginError = "Email o contraseña incorrecta";
+                TempData["error"] = "Email o contraseña incorrecta";
+                return RedirectToAction("LoginRegister", "Home", TempData["error"]);
             }
 
         }
