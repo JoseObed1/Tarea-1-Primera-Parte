@@ -226,11 +226,13 @@
     <Content Include="Content\img\candado.png" />
     <Content Include="Content\img\cattt.jpg" />
     <Content Include="Content\img\cerrajero.png" />
+    <Content Include="Content\img\cv.png" />
     <Content Include="Content\img\empleados.png" />
     <Content Include="Content\img\enter.png" />
     <Content Include="Content\img\eudy.jpg" />
     <Content Include="Content\img\fondo 2.jpg" />
     <Content Include="Content\img\girl.jpg" />
+    <Content Include="Content\img\mas.png" />
     <Content Include="Content\img\notas.png" />
     <Content Include="Content\img\obed.jpg" />
     <Content Include="Content\img\opciones.png" />
@@ -238,6 +240,7 @@
     <Content Include="Content\img\publicacion-de-invitado %281%29.png" />
     <Content Include="Content\img\registrarse.png" />
     <Content Include="Content\img\ro.jpg" />
+    <Content Include="Content\img\volver-flecha.png" />
     <Content Include="Content\js\scriptLR.js" />
     <Content Include="Content\js\scripts.js" />
     <Content Include="Content\js\site.js" />
