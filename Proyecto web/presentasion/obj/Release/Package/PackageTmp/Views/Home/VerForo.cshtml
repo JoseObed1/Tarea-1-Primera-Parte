@@ -9,7 +9,7 @@
 </center>
 
 <div>
-    <h4></h4>
+    @*<button style="text-decoration:none"><img src="~/Content/img/volver-flecha.png" style="height:40px ; " width: 40px" />@Html.ActionLink("Regresar", null, null, null, new { href = Request.UrlReferrer })</button>*@
     <hr />
     <dl class="dl-horizontal">
         <dt style="font-size: 22px ; color: #0d6efd">
@@ -45,18 +45,6 @@
         </dd>
 
         <dt style="font-size: 22px ; color: #0d6efd">
-            @Html.DisplayNameFor(model => model.ID_Categoria)
-        </dt>
-
-        <dt style="font-size: 22px ; color: #0d6efd">
-            @Html.DisplayNameFor(model => model.Correo_Compania)
-        </dt>
-
-        <dd style="font-size: 20px; color: black">
-            @Html.DisplayFor(model => model.Correo_Compania)
-        </dd>
-
-        <dt style="font-size: 22px ; color: #0d6efd">
             @Html.DisplayNameFor(model => model.Ubicacion)
         </dt>
 
@@ -69,12 +57,18 @@
         </dt>
 
         <dd style="font-size: 20px; color: black">
-            @Html.DisplayFor(model => model.Url)
+            <a href="@Html.DisplayFor(model => model.Url)">@Html.DisplayFor(model => model.Url)</a>
         </dd>
-
+        
+        <center style="padding-top: 40px">
+            <button style="width: 95px; height: 120px"><a href=" mailto:@Html.DisplayFor(model => model.Correo_Compania)" style="text-decoration: none"><a href="mailto:@Html.DisplayFor(model => model.Correo_Compania)" style="text-decoration: none"><img src="~/Content/img/cv.png" style="height:40px ; " width: 40px" />Enviar Curriculum</a></button>
+        </center>
     </dl>
 </div>
-@*<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID_Foro }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>*@
+<p style="text-decoration: none">
+
+    <button>
+        <img src="~/Content/img/volver-flecha.png" style="height:30px ; " width: 30px" />@Html.ActionLink("  Regresar", "ForosPublicados", null, new { style = "text-decoration:none;" })</button>
+
+
+</p>
