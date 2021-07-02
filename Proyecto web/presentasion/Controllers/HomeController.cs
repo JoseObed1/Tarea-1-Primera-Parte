@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.Mvc;
 using WebApplication3.App_Data;
 using System.Net;
+using System.Web.Security;
 
 namespace WebApplication3.Controllers
 {
@@ -24,12 +25,14 @@ namespace WebApplication3.Controllers
             return View();
         }
 
+        [Authorize]
         public ActionResult nuevoPost()
         {
             return View();
         }
 
         [HttpPost]
+        [Authorize]
         public ActionResult GuardarPost(Foro datos)
         {
             var res = Request.Form["selec"];
@@ -84,17 +87,22 @@ namespace WebApplication3.Controllers
             else
             { //Si el usuario no existe en la DB, lo creamos xD                
                 testeo.NuevoUsuario(dato);
+                Session["UserName"] = dato.Username.ToString();
+                FormsAuthentication.SetAuthCookie(dato.Correo, true);
                 return RedirectToAction("Index", "Home");
             }
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult InicioSesion(Cuentas datoss)
         {
             var existe = db.Cuentas.Where(y => y.Correo.Equals(datoss.Correo) && y.Password.Equals(datoss.Password)).FirstOrDefault();
 
             if (existe != null)
             {
+                Session["UserName"] = existe.Username.ToString();
+                FormsAuthentication.SetAuthCookie(datoss.Correo, true);
                 return RedirectToAction("Index", "Home");
             }
             else
@@ -113,6 +121,12 @@ namespace WebApplication3.Controllers
         public ActionResult Contactos()
         {
             return View();
+        }
+        public ActionResult LogOut()
+        {
+            Session.Clear();
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Index", "Home");
         }
     }
 }

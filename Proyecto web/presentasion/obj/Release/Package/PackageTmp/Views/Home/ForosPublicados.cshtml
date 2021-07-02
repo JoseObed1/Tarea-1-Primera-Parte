@@ -1,0 +1,54 @@
+﻿@model IEnumerable<WebApplication3.App_Data.Foro>
+
+@{
+    ViewBag.Title = "ForosPublicados";
+}
+<center style="padding-top: 20px">
+    <h2 style="color: #0d6efd">SERVICIO DE VACANTES DE TRABAJO</h2>
+    <img src="~/Content/img/oportunidades.png" />
+    <h2 style="padding-bottom: 10px">Vacantes Disponibles</h2>
+</center>
+
+@using (Html.BeginForm("ForosPublicados", "Home"))
+{
+    <label for="cars" style="font-size: 28px ; color: #0d6efd"><img src="~/Content/img/opciones.png" style="height:25px " width: 25px;" /> Categorias </label>
+
+    <select name="ForoCat" id="ForoCat" class="">
+        <option value="1">Software</option>
+        <option value="2">Seguridad</option>
+        <option value="3">Database</option>
+        <option value="4">Cloud Computing</option>
+        <option value="5">Computer Network Specialist</option>
+        <option value="6">Soporte Informatico</option>
+    </select>
+
+
+    <button class="btn btn-primary" type="submit"><img src="" style="height:30px ; " width: 30px" /> Filtrar</button>
+}
+
+<p>
+
+</p>
+
+<div class="row gx-4 gx-lg-5" style="padding-top: 20px">
+
+    @if (Model != null)
+    {
+        foreach (var item in Model)
+        {
+
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div id="ForoCat" class="card-body">
+                        <h2 class="card-title">@Html.DisplayFor(modelItem => item.Nombre)</h2>
+                        <p class="card-text">@Html.DisplayFor(modelItem => item.Descripcion)</p>
+                    </div>
+                    <div class="card-footer"><a class="btn btn-primary btn-sm" href="@Url.Action("VerForo", "Home", new { id = item.ID_Foro })"><img src="~/Content/img/agregar.png" style="height:25px ; " width: 25px" />Mas Info</a></div>
+                </div>
+            </div>
+        }
+    }
+</div>
+
+
+
